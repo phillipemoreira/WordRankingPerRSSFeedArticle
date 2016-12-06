@@ -24,7 +24,10 @@ namespace RSSTools
         /// <summary>
         /// 
         /// </summary>
-        public List<Article> Articles { get { return Feed.Articles; } }
+        public List<Article> Articles
+        {
+            get { return Feed != null ? Feed.Articles : null; }
+        }
 
         private RSSReader(string feedURI)
         {

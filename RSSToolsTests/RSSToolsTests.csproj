@@ -53,16 +53,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UTs\RSSReader_tests.cs" />
+    <Compile Include="UTs\RSSReaderTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RSSTools\RSSTools.csproj">
+    <ProjectReference Include="..\RSSTools\RSSTools.csproj">
       <Project>{cb85ce5b-a8e0-4085-84b2-81befab3b405}</Project>
       <Name>RSSTools</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RSSFeeds\feed.xml" />
+    <Content Include="RSSFeeds\arstechnica.xml" />
+    <Content Include="RSSFeeds\simpleFeed.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

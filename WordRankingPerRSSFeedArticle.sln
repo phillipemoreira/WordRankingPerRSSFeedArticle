@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordRankingPerRSSFeedArticle", "WordRankingPerRSSFeedArticle.csproj", "{DC655F9C-DE2C-4E1E-AB4E-B0A76DC70AAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordRankingPerRSSFeedArticle", "WordRankingPerRSSFeedArticle\WordRankingPerRSSFeedArticle.csproj", "{DC655F9C-DE2C-4E1E-AB4E-B0A76DC70AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSTools", "..\RSSTools\RSSTools.csproj", "{CB85CE5B-A8E0-4085-84B2-81BEFAB3B405}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSTools", "RSSTools\RSSTools.csproj", "{CB85CE5B-A8E0-4085-84B2-81BEFAB3B405}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSToolsTests", "RSSToolsTests\RSSToolsTests.csproj", "{9C1066E3-D243-4DA3-91AB-DF7238B9AC03}"
 EndProject

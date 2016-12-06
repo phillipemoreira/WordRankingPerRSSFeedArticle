@@ -32,8 +32,8 @@
             this.txtFeedURI = new System.Windows.Forms.TextBox();
             this.btnRead = new System.Windows.Forms.Button();
             this.gbFeeds = new System.Windows.Forms.GroupBox();
-            this.lvFeeds = new System.Windows.Forms.ListView();
             this.rtbContent = new System.Windows.Forms.RichTextBox();
+            this.lvFeeds = new System.Windows.Forms.ListView();
             this.gbFeedAddress.SuspendLayout();
             this.gbFeeds.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             // txtFeedURI
             // 
-            this.txtFeedURI.Location = new System.Drawing.Point(24, 21);
+            this.txtFeedURI.Location = new System.Drawing.Point(7, 21);
             this.txtFeedURI.Name = "txtFeedURI";
             this.txtFeedURI.Size = new System.Drawing.Size(720, 20);
             this.txtFeedURI.TabIndex = 1;
@@ -77,14 +77,6 @@
             this.gbFeeds.TabStop = false;
             this.gbFeeds.Text = "Feeds";
             // 
-            // lvFeeds
-            // 
-            this.lvFeeds.Location = new System.Drawing.Point(7, 20);
-            this.lvFeeds.Name = "lvFeeds";
-            this.lvFeeds.Size = new System.Drawing.Size(400, 200);
-            this.lvFeeds.TabIndex = 0;
-            this.lvFeeds.UseCompatibleStateImageBehavior = false;
-            // 
             // rtbContent
             // 
             this.rtbContent.Location = new System.Drawing.Point(425, 20);
@@ -92,6 +84,15 @@
             this.rtbContent.Size = new System.Drawing.Size(400, 200);
             this.rtbContent.TabIndex = 1;
             this.rtbContent.Text = "";
+            // 
+            // lvFeeds
+            // 
+            this.lvFeeds.GridLines = true;
+            this.lvFeeds.Location = new System.Drawing.Point(7, 20);
+            this.lvFeeds.Name = "lvFeeds";
+            this.lvFeeds.Size = new System.Drawing.Size(400, 200);
+            this.lvFeeds.TabIndex = 0;
+            this.lvFeeds.UseCompatibleStateImageBehavior = false;
             // 
             // FeedClient
             // 

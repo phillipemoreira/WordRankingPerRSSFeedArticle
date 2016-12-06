@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Test website</title>
+    <link>http://test.com</link>
+    <description>Test website description</description>
+    <language>en-US</language>
+    <item>
+      <title>Fisrt Article</title>
+      <link>http://test.com/firstArticle</link>
+      <pubDate>Fri, 02 Dec 2016 20:55:38</pubDate>>
+      <description>Description of first article.</description>
+      <content:encoded>Content of first article.</content:encoded>
+    </item>
+    <item>
+      <title>Second Article</title>
+      <link>http://test.com/secondArticle</link>
+      <pubDate>Sat, 03 Dec 2016 21:55:38</pubDate>>
+      <description>Description of second article.</description>
+      <content:encoded>Content of second article.</content:encoded>
+    </item>
+    <item>
+      <title>Third Article</title>
+      <link>http://test.com/thirdArticle</link>
+      <pubDate>Sun, 04 Dec 2016 22:55:38</pubDate>>
+      <description>Description of third article.</description>
+      <content:encoded>Content of third article.</content:encoded>
+    </item>
+  </channel>
+</rss>

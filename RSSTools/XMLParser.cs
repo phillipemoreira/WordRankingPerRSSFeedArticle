@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Linq;
+using RSSTools.Exceptions;
 
 namespace RSSTools
 {
@@ -22,18 +22,29 @@ namespace RSSTools
             var reader = XmlReader.Create(feedURI);
             var xdocument = XDocument.Load(reader);
 
-            var channel = xdocument.Element("channel");
-            var title = channel.Element("title");
-            var link = channel.Element("link");
-            var description = channel.Element("description");
-
-            feed = new Feed(title.Value, link.Value, description.Value);
-
-            var items = channel.Descendants("item");
-            foreach (var item in items)
+            try
             {
-                feed.Articles.Add(ParseArticle(item));
+                var channel = xdocument.Root.Element("channel");
+                var title = channel.Element("title");
+                var link = channel.Element("link");
+                var description = channel.Element("description");
+
+                feed = new Feed(title.Value, link.Value, description.Value);
+
+                var items = channel.Descendants("item");
+                foreach (var item in items)
+                {
+                    feed.Articles.Add(ParseArticle(item));
+                }
             }
+            catch (NullReferenceException ex)
+            {
+                throw new FeedMalformedException();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }   
 
             return feed;
         }
@@ -44,7 +55,7 @@ namespace RSSTools
             XNamespace ContentNS = "http://purl.org/rss/1.0/modules/content/";
 
             var title = ArticleItem.Element("title");
-            var date = ArticleItem.Element("date");
+            var date = ArticleItem.Element("pubDate");
             var description = ArticleItem.Element("description");
             var link = ArticleItem.Element("link");            
             var encodedContent = ArticleItem.Element(ContentNS + "encoded");

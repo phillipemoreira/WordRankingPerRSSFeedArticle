@@ -25,6 +25,8 @@ namespace WordRankingPerRSSFeedArticle
                 var feedURI = txtFeedURI.Text;
                 reader = RSSReader.Read(txtFeedURI.Text);
 
+                this.FillControls();
+
             }
             catch (Exception ex)
             {
