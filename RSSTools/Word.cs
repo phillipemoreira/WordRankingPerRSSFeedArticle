@@ -12,7 +12,7 @@ namespace RSSTools
     public class Word
     {
         public string Text { get; }
-        private Dictionary<string, int> AppearanceNumberPerArticle { get; }
+        public Dictionary<string, int> AppearanceNumberPerArticle { get; }
 
         /// <summary>
         /// 
@@ -22,6 +22,9 @@ namespace RSSTools
         {
             this.Text = text;
             AppearanceNumberPerArticle = new Dictionary<string, int>();
+
+            AppearanceNumberPerArticle.Add("ArtigoTeste" + Text, 5);
+            AppearanceNumberPerArticle.Add("ArtigoTeste2" + Text, 5);
         }
 
         /// <summary>

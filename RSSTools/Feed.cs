@@ -35,7 +35,7 @@ namespace RSSTools
         /// <returns></returns>
         public List<Word> GetMostRelevantWords(int numberOfWords)
         {
-            throw new NotImplementedException();
+            return new List<Word>() { new Word("Batata"), new Word("Agua"), new Word("Doritos") };
         }
 
         private void IdentifyMostRelevantWords()
