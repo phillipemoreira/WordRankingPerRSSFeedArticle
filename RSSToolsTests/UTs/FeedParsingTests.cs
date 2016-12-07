@@ -11,7 +11,7 @@ namespace RSSTools.Tests
     [TestClass()]
     public class FeedParsingTests
     {
-        RSSReader reader;
+        Feed feed;
 
         string simpleFeedURI = @"..\..\RSSFeeds\simpleFeed.xml";
         string malformedFeedURI = @"..\..\RSSFeeds\malformedFeed.xml";
@@ -19,7 +19,7 @@ namespace RSSTools.Tests
         [TestInitialize]
         public void Initialize()
         {
-            reader = RSSReader.Read(simpleFeedURI);
+            feed = RSSReader.Read(simpleFeedURI);
         }
 
         /// <summary>
@@ -73,9 +73,6 @@ namespace RSSTools.Tests
         [TestMethod()]
         public void FeedMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
-            // Act
-            var feed = reader.Feed;
-
             // Assert
             Assert.IsNotNull(feed);
             Assert.IsTrue(feed.Articles.Count == 3);
@@ -92,10 +89,8 @@ namespace RSSTools.Tests
         [TestMethod()]
         public void ArticlesMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
-            // Act
-            var articles = reader.Articles;
-
             // Assert
+            var articles = feed.Articles;
             Assert.IsNotNull(articles);
             Assert.IsTrue(articles.Count == 3);
 

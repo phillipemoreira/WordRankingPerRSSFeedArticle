@@ -23,11 +23,8 @@ namespace RSSTools.Tests
         [TestMethod()]
         public void ARSTechnicaFeedMustBeCorrectlyLoaded()
         {
-            // Arrange
-            RSSReader reader = RSSReader.Read(arstechnicaFeedURL);
-
-            // Act
-            var feed = reader.Feed;
+            // Arrange && Act
+            Feed feed = RSSReader.Read(arstechnicaFeedURL);
 
             // Assert
             Assert.IsNotNull(feed);

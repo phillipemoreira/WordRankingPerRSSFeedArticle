@@ -29,7 +29,7 @@ namespace RSSTools
                     feed.Articles.Add(ParseArticle(item));
                 }
             }
-            catch (NullReferenceException ex)
+            catch (NullReferenceException)
             {
                 throw new FeedMalformedException();
             }

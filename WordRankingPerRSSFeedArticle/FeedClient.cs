@@ -8,7 +8,7 @@ namespace WordRankingPerRSSFeedArticle
 {
     public partial class FeedClient : Form
     {
-        RSSReader reader;
+        Feed feed;
         List<Word> mostRelevantWords;
 
         #region constructor
@@ -32,7 +32,7 @@ namespace WordRankingPerRSSFeedArticle
             try
             {
                 var feedURI = txtFeedURI.Text;
-                reader = RSSReader.Read(txtFeedURI.Text);
+                feed = RSSReader.Read(txtFeedURI.Text);
 
                 this.FillControls();
 
@@ -49,7 +49,7 @@ namespace WordRankingPerRSSFeedArticle
 
             if (view.SelectedItems.Count == 1)
             {
-                browser.DocumentText = reader.Articles.Single(i => i.Title == view.SelectedItems[0].Text).EncodedContent;
+                browser.DocumentText = feed.Articles.Single(i => i.Title == view.SelectedItems[0].Text).EncodedContent;
             }
         }
 
@@ -83,7 +83,7 @@ namespace WordRankingPerRSSFeedArticle
 
         private void FillFeedListView()
         {
-            var articles = reader.Articles;
+            var articles = feed.Articles;
             foreach (var article in articles)
             {
                 var row = new ListViewItem(article.Title, article.Date.ToShortDateString());
@@ -93,7 +93,7 @@ namespace WordRankingPerRSSFeedArticle
 
         private void FillRelevantWords()
         {
-            mostRelevantWords = reader.Feed.GetMostRelevantWords(5);
+            mostRelevantWords = feed.GetMostRelevantWords(5);
             foreach (var word in mostRelevantWords)
             {
                 var row = new ListViewItem(word.Text);
