@@ -63,7 +63,7 @@ namespace WordRankingPerRSSFeedArticle
             {
                 var word = mostRelevantWords.Single(a => a.Text == view.SelectedItems[0].Text);
 
-                foreach (var item in word.AppearanceNumberPerArticle)
+                foreach (var item in word.AppearanceCountPerArticle)
                 {
                     var row = new ListViewItem(item.Key, item.Value);
                     lvWordArticle.Items.Add(row);

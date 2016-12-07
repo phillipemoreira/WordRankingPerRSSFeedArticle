@@ -52,8 +52,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="IntegrationTests\ARSTechnicaParsingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UTs\RSSReaderTests.cs" />
+    <Compile Include="UTs\FeedParsingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RSSTools\RSSTools.csproj">
@@ -62,7 +63,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RSSFeeds\arstechnica.xml" />
+    <Content Include="RSSFeeds\malformedFeed.xml" />
     <Content Include="RSSFeeds\simpleFeed.xml" />
   </ItemGroup>
   <Choose>

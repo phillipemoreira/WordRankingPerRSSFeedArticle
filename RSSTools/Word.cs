@@ -1,42 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RSSTools
 {
     /// <summary>
-    /// 
+    /// The representation of an word present in the feed's articles.
     /// </summary>
     public class Word
     {
+        /// <summary>
+        /// The actual word.
+        /// </summary>
         public string Text { get; }
-        public Dictionary<string, int> AppearanceNumberPerArticle { get; }
 
         /// <summary>
-        /// 
+        /// Returns the appearnce count of the word in each of the feeds article.
         /// </summary>
-        /// <param name="text"></param>
-        public Word (string text)
+        public Dictionary<string, int> AppearanceCountPerArticle { get; }
+
+        internal Word (string text)
         {
             this.Text = text;
-            AppearanceNumberPerArticle = new Dictionary<string, int>();
+            AppearanceCountPerArticle = new Dictionary<string, int>();
 
-            AppearanceNumberPerArticle.Add("ArtigoTeste" + Text, 5);
-            AppearanceNumberPerArticle.Add("ArtigoTeste2" + Text, 5);
+            AppearanceCountPerArticle.Add("ArtigoTeste" + Text, 5);
+            AppearanceCountPerArticle.Add("ArtigoTeste2" + Text, 5);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="articleTittle"></param>
-        /// <param name="appearanceCount"></param>
-        public void AddArticleAppearance(string articleTittle, int appearanceCount)
+        internal void AddArticleAppearance(string articleTittle, int appearanceCount)
         {
-            if (!AppearanceNumberPerArticle.ContainsKey(articleTittle))
+            if (!AppearanceCountPerArticle.ContainsKey(articleTittle))
             {
-                AppearanceNumberPerArticle.Add(articleTittle, appearanceCount);
+                AppearanceCountPerArticle.Add(articleTittle, appearanceCount);
             }
             else
             {

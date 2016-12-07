@@ -1,17 +1,20 @@
-﻿using RSSTools;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using RSSTools.Exceptions;
+using System.IO;
 
 namespace RSSTools.Tests
 {
+    /// <summary>
+    /// Unit tests for RSSTools.RSSReader
+    /// </summary>
     [TestClass()]
-    public class RSSReaderTests
+    public class FeedParsingTests
     {
         RSSReader reader;
 
         string simpleFeedURI = @"..\..\RSSFeeds\simpleFeed.xml";
-        string arstechnicaFeedURL = @"http://feeds.arstechnica.com/arstechnica/technology-lab";
+        string malformedFeedURI = @"..\..\RSSFeeds\malformedFeed.xml";
 
         [TestInitialize]
         public void Initialize()
@@ -20,30 +23,55 @@ namespace RSSTools.Tests
         }
 
         /// <summary>
-        /// 
+        /// Given an empty feed URI
+        /// Then the system must throw an exception.
         /// </summary>
         [TestMethod()]
         [ExpectedException(typeof(EmptyORNullURIException))]
-        public void MustThrowExceptionIfURIIsEmpty()
+        public void MustThrowExceptionWhenURIIsEmpty()
         {
             RSSReader.Read(string.Empty);
         }
 
         /// <summary>
-        /// 
+        /// Given a null feed URI
+        /// Then the system must throw an exception.
         /// </summary>
         [TestMethod()]
         [ExpectedException(typeof(EmptyORNullURIException))]
-        public void MustThrowExceptionIfURIIsNull()
+        public void MustThrowExceptionWhenURIIsNull()
         {
             RSSReader.Read(null);
         }
 
         /// <summary>
-        /// 
+        /// Given an invalid feed URI
+        /// Then the system must throw an exception.
         /// </summary>
         [TestMethod()]
-        public void FeedMustBeCorrectlyLoaded()
+        [ExpectedException(typeof(FileNotFoundException))]
+        public void MustThrowExceptionWhenURIIsInvalid()
+        {
+            RSSReader.Read("!#@$%");
+        }
+
+        /// <summary>
+        /// Given a malformed feed XML
+        /// Then the system must throw an exception.
+        /// </summary>
+        [TestMethod()]
+        [ExpectedException(typeof(FeedMalformedException))]
+        public void MustThrowExceptionWhenFeedIsMalformed()
+        {
+            RSSReader.Read(malformedFeedURI);
+        }
+
+        /// <summary>
+        /// Given a well formed RSS feed xml
+        /// Then RSSTools feed must be correctly parsed.
+        /// </summary>
+        [TestMethod()]
+        public void FeedMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
             // Act
             var feed = reader.Feed;
@@ -58,10 +86,11 @@ namespace RSSTools.Tests
         }
 
         /// <summary>
-        /// 
+        /// Given a well formed RSS feed xml
+        /// Then RSSTools Articles must be correctly parsed.
         /// </summary>
         [TestMethod()]
-        public void ArticlesMustBeCorrectlyLoaded()
+        public void ArticlesMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
             // Act
             var articles = reader.Articles;

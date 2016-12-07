@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<link>http://test.com</link>
+		<description>Test website description</description>
+		<language>en-US</language>
+    <item>
+      <title>Fisrt Article</title>
+    </item>
+  </channel>
+</rss>

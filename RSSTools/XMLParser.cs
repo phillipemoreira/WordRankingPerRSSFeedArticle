@@ -5,16 +5,8 @@ using RSSTools.Exceptions;
 
 namespace RSSTools
 {
-    /// <summary>
-    /// 
-    /// </summary>
     internal class XMLParser
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="feedURI"></param>
-        /// <returns></returns>
         internal static Feed ParseFeed(string feedURI)
         {
             Feed feed = null;

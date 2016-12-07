@@ -1,33 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RSSTools.Exceptions;
 
 namespace RSSTools
 {
     /// <summary>
-    /// 
+    /// RSS feed reader.
     /// </summary>
     public class RSSReader
     {
         private Feed feed;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public string FeedURI { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public Feed Feed { get { return feed; } }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<Article> Articles
-        {
-            get { return Feed != null ? Feed.Articles : null; }
-        }
 
         private RSSReader(string feedURI)
         {
@@ -35,11 +16,31 @@ namespace RSSTools
             feed = XMLParser.ParseFeed(feedURI);
         }
 
+        #region public API
+
         /// <summary>
-        /// 
+        /// Returns the feed URI.
         /// </summary>
-        /// <param name="feedURI"></param>
-        /// <returns></returns>
+        public string FeedURI { get; }
+
+        /// <summary>
+        /// Returns a parsed represensation of the feed.
+        /// </summary>
+        public Feed Feed { get { return feed; } }
+
+        /// <summary>
+        /// Returns a parsed represensation of the feed articles.
+        /// </summary>
+        public List<Article> Articles
+        {
+            get { return Feed != null ? Feed.Articles : null; }
+        }
+
+        /// <summary>
+        /// Parses the feed content.
+        /// </summary>
+        /// <param name="feedURI">The location of the feed.</param>
+        /// <returns>An instance of the reader containing the parsed content.</returns>
         public static RSSReader Read(string feedURI)
         {
             if (feedURI == null || feedURI == string.Empty)
@@ -49,5 +50,7 @@ namespace RSSTools
 
             return new RSSReader(feedURI);
         }
+
+        #endregion  
     }
 }
