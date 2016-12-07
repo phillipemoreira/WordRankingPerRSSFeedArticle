@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.gbFeedAddress = new System.Windows.Forms.GroupBox();
             this.txtFeedURI = new System.Windows.Forms.TextBox();
             this.btnRead = new System.Windows.Forms.Button();
@@ -41,12 +41,12 @@
             this.gbContent = new System.Windows.Forms.GroupBox();
             this.browser = new System.Windows.Forms.WebBrowser();
             this.gbRelevantWords = new System.Windows.Forms.GroupBox();
-            this.lvWordArticle = new System.Windows.Forms.ListView();
-            this.Article = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.AppearnceCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvRelevantWords = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvWordArticle = new System.Windows.Forms.ListView();
+            this.Article = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.AppearnceCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gbFeedAddress.SuspendLayout();
             this.gbFeeds.SuspendLayout();
             this.gbContent.SuspendLayout();
@@ -86,7 +86,7 @@
             this.gbFeeds.Controls.Add(this.lvFeeds);
             this.gbFeeds.Location = new System.Drawing.Point(13, 75);
             this.gbFeeds.Name = "gbFeeds";
-            this.gbFeeds.Size = new System.Drawing.Size(515, 350);
+            this.gbFeeds.Size = new System.Drawing.Size(536, 350);
             this.gbFeeds.TabIndex = 1;
             this.gbFeeds.TabStop = false;
             this.gbFeeds.Text = "Feeds";
@@ -104,7 +104,7 @@
             listViewGroup1});
             this.lvFeeds.Location = new System.Drawing.Point(7, 20);
             this.lvFeeds.Name = "lvFeeds";
-            this.lvFeeds.Size = new System.Drawing.Size(502, 320);
+            this.lvFeeds.Size = new System.Drawing.Size(523, 320);
             this.lvFeeds.TabIndex = 0;
             this.lvFeeds.UseCompatibleStateImageBehavior = false;
             this.lvFeeds.View = System.Windows.Forms.View.List;
@@ -122,9 +122,9 @@
             // gbContent
             // 
             this.gbContent.Controls.Add(this.browser);
-            this.gbContent.Location = new System.Drawing.Point(534, 75);
+            this.gbContent.Location = new System.Drawing.Point(555, 75);
             this.gbContent.Name = "gbContent";
-            this.gbContent.Size = new System.Drawing.Size(828, 706);
+            this.gbContent.Size = new System.Drawing.Size(800, 706);
             this.gbContent.TabIndex = 2;
             this.gbContent.TabStop = false;
             this.gbContent.Text = "Content";
@@ -135,7 +135,7 @@
             this.browser.Location = new System.Drawing.Point(3, 16);
             this.browser.MinimumSize = new System.Drawing.Size(20, 20);
             this.browser.Name = "browser";
-            this.browser.Size = new System.Drawing.Size(822, 687);
+            this.browser.Size = new System.Drawing.Size(794, 687);
             this.browser.TabIndex = 0;
             // 
             // gbRelevantWords
@@ -144,37 +144,10 @@
             this.gbRelevantWords.Controls.Add(this.lvWordArticle);
             this.gbRelevantWords.Location = new System.Drawing.Point(13, 431);
             this.gbRelevantWords.Name = "gbRelevantWords";
-            this.gbRelevantWords.Size = new System.Drawing.Size(515, 350);
+            this.gbRelevantWords.Size = new System.Drawing.Size(536, 350);
             this.gbRelevantWords.TabIndex = 3;
             this.gbRelevantWords.TabStop = false;
             this.gbRelevantWords.Text = "5 Most relevant words";
-            // 
-            // lvWordArticle
-            // 
-            this.lvWordArticle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Article,
-            this.AppearnceCount});
-            this.lvWordArticle.FullRowSelect = true;
-            this.lvWordArticle.GridLines = true;
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup1";
-            this.lvWordArticle.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3});
-            this.lvWordArticle.Location = new System.Drawing.Point(123, 19);
-            this.lvWordArticle.Name = "lvWordArticle";
-            this.lvWordArticle.Size = new System.Drawing.Size(385, 325);
-            this.lvWordArticle.TabIndex = 0;
-            this.lvWordArticle.UseCompatibleStateImageBehavior = false;
-            this.lvWordArticle.View = System.Windows.Forms.View.List;
-            // 
-            // Article
-            // 
-            this.Article.Text = "Título";
-            this.Article.Width = 320;
-            // 
-            // AppearnceCount
-            // 
-            this.AppearnceCount.Text = "Data";
             // 
             // lvRelevantWords
             // 
@@ -189,7 +162,7 @@
             listViewGroup2});
             this.lvRelevantWords.Location = new System.Drawing.Point(7, 19);
             this.lvRelevantWords.Name = "lvRelevantWords";
-            this.lvRelevantWords.Size = new System.Drawing.Size(110, 325);
+            this.lvRelevantWords.Size = new System.Drawing.Size(90, 325);
             this.lvRelevantWords.TabIndex = 1;
             this.lvRelevantWords.UseCompatibleStateImageBehavior = false;
             this.lvRelevantWords.View = System.Windows.Forms.View.List;
@@ -203,6 +176,34 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Data";
+            // 
+            // lvWordArticle
+            // 
+            this.lvWordArticle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.AppearnceCount,
+            this.Article});
+            this.lvWordArticle.FullRowSelect = true;
+            this.lvWordArticle.GridLines = true;
+            listViewGroup3.Header = "ListViewGroup";
+            listViewGroup3.Name = "listViewGroup1";
+            this.lvWordArticle.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup3});
+            this.lvWordArticle.Location = new System.Drawing.Point(103, 19);
+            this.lvWordArticle.Name = "lvWordArticle";
+            this.lvWordArticle.Size = new System.Drawing.Size(427, 325);
+            this.lvWordArticle.TabIndex = 0;
+            this.lvWordArticle.UseCompatibleStateImageBehavior = false;
+            this.lvWordArticle.View = System.Windows.Forms.View.List;
+            // 
+            // Article
+            // 
+            this.Article.Text = "Título";
+            this.Article.Width = 320;
+            // 
+            // AppearnceCount
+            // 
+            this.AppearnceCount.Text = "Numero de aparições";
+            this.AppearnceCount.Width = 30;
             // 
             // FeedClient
             // 

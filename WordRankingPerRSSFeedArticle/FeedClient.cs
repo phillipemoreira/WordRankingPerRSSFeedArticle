@@ -8,6 +8,7 @@ namespace WordRankingPerRSSFeedArticle
 {
     public partial class FeedClient : Form
     {
+        RSSReader reader;
         Feed feed;
         List<Word> mostRelevantWords;
 
@@ -25,6 +26,7 @@ namespace WordRankingPerRSSFeedArticle
         private void FeedClient_Load(object sender, EventArgs e)
         {
             txtFeedURI.Text = "http://feeds.arstechnica.com/arstechnica/technology-lab";
+            txtFeedURI.Text = @"C:\Users\phillipe\Documents\GitHub\WordRankingPerRSSFeedArticle\RSSToolsTests\RSSFeeds\simpleFeed.xml";
         }
 
         private void btnRead_Click(object sender, EventArgs e)
@@ -32,7 +34,8 @@ namespace WordRankingPerRSSFeedArticle
             try
             {
                 var feedURI = txtFeedURI.Text;
-                feed = RSSReader.Read(txtFeedURI.Text);
+                reader = RSSReader.Read(txtFeedURI.Text);
+                feed = reader.Feed;
 
                 this.FillControls();
 
@@ -65,7 +68,7 @@ namespace WordRankingPerRSSFeedArticle
 
                 foreach (var item in word.AppearanceCountPerArticle)
                 {
-                    var row = new ListViewItem(item.Key, item.Value);
+                    var row = new ListViewItem(item.Value.ToString(), item.Key.ToString());
                     lvWordArticle.Items.Add(row);
                 }
             }
@@ -93,7 +96,7 @@ namespace WordRankingPerRSSFeedArticle
 
         private void FillRelevantWords()
         {
-            mostRelevantWords = feed.GetMostRelevantWords(5);
+            mostRelevantWords = reader.GetMostRelevantWords(5);
             foreach (var word in mostRelevantWords)
             {
                 var row = new ListViewItem(word.Text);

@@ -10,21 +10,21 @@
       <link>http://test.com/firstArticle</link>
       <pubDate>Fri, 02 Dec 2016 20:55:38</pubDate>>
       <description>Description of first article.</description>
-      <content:encoded>Content of first article.</content:encoded>
+      <content:encoded>Thor House that on the Sea with Thor</content:encoded>
     </item>
     <item>
       <title>Second Article</title>
       <link>http://test.com/secondArticle</link>
       <pubDate>Sat, 03 Dec 2016 21:55:38</pubDate>>
       <description>Description of second article.</description>
-      <content:encoded>Content of second article.</content:encoded>
+      <content:encoded>Window House that on the Sea with James</content:encoded>
     </item>
     <item>
       <title>Third Article</title>
       <link>http://test.com/thirdArticle</link>
       <pubDate>Sun, 04 Dec 2016 22:55:38</pubDate>>
       <description>Description of third article.</description>
-      <content:encoded>Content of third article.</content:encoded>
+      <content:encoded>Thor Thor Thor House Window</content:encoded>
     </item>
   </channel>
 </rss>

@@ -16,12 +16,6 @@ namespace RSSTools.Tests
         string simpleFeedURI = @"..\..\RSSFeeds\simpleFeed.xml";
         string malformedFeedURI = @"..\..\RSSFeeds\malformedFeed.xml";
 
-        [TestInitialize]
-        public void Initialize()
-        {
-            feed = RSSReader.Read(simpleFeedURI);
-        }
-
         /// <summary>
         /// Given an empty feed URI
         /// Then the system must throw an exception.
@@ -30,6 +24,7 @@ namespace RSSTools.Tests
         [ExpectedException(typeof(EmptyORNullURIException))]
         public void MustThrowExceptionWhenURIIsEmpty()
         {
+            // Act and Assert
             RSSReader.Read(string.Empty);
         }
 
@@ -41,6 +36,7 @@ namespace RSSTools.Tests
         [ExpectedException(typeof(EmptyORNullURIException))]
         public void MustThrowExceptionWhenURIIsNull()
         {
+            // Act and Assert
             RSSReader.Read(null);
         }
 
@@ -52,6 +48,7 @@ namespace RSSTools.Tests
         [ExpectedException(typeof(FileNotFoundException))]
         public void MustThrowExceptionWhenURIIsInvalid()
         {
+            // Act and Assert
             RSSReader.Read("!#@$%");
         }
 
@@ -63,6 +60,7 @@ namespace RSSTools.Tests
         [ExpectedException(typeof(FeedMalformedException))]
         public void MustThrowExceptionWhenFeedIsMalformed()
         {
+            // Act and Assert
             RSSReader.Read(malformedFeedURI);
         }
 
@@ -73,6 +71,9 @@ namespace RSSTools.Tests
         [TestMethod()]
         public void FeedMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
+            // Arrange && Act
+            feed = RSSReader.Read(simpleFeedURI).Feed;
+
             // Assert
             Assert.IsNotNull(feed);
             Assert.IsTrue(feed.Articles.Count == 3);
@@ -89,19 +90,22 @@ namespace RSSTools.Tests
         [TestMethod()]
         public void ArticlesMustBeCorrectlyLoadedWhenXMLIsWellFormed()
         {
+            // Arrange && Act
+            feed = RSSReader.Read(simpleFeedURI).Feed;
+
             // Assert
             var articles = feed.Articles;
             Assert.IsNotNull(articles);
             Assert.IsTrue(articles.Count == 3);
 
             this.AssertArticle(articles[0], "Fisrt Article", "Description of first article.", "http://test.com/firstArticle",
-                new DateTime(2016, 12, 02, 20, 55, 38), "Content of first article.");
+                new DateTime(2016, 12, 02, 20, 55, 38), "Thor House that on the Sea with Thor");
 
             this.AssertArticle(articles[1], "Second Article", "Description of second article.", "http://test.com/secondArticle",
-                new DateTime(2016, 12, 03, 21, 55, 38), "Content of second article.");
+                new DateTime(2016, 12, 03, 21, 55, 38), "Window House that on the Sea with James");
 
             this.AssertArticle(articles[2], "Third Article", "Description of third article.", "http://test.com/thirdArticle",
-                new DateTime(2016, 12, 04, 22, 55, 38), "Content of third article.");
+                new DateTime(2016, 12, 04, 22, 55, 38), "Thor Thor Thor House Window");
         }
 
         private void AssertArticle(

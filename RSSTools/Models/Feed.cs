@@ -36,15 +36,5 @@ namespace RSSTools
 
             Articles = new List<Article>();
         }
-
-        /// <summary>
-        /// Returns the list of most relevant words.
-        /// </summary>
-        /// <param name="numberOfWords">The number of words to be returned in descending order.</param>
-        /// <returns>The words.</returns>
-        public List<Word> GetMostRelevantWords(int numberOfWords)
-        {
-            return new List<Word>() { new Word("Batata"), new Word("Agua"), new Word("Doritos") };
-        }
     }
 }

@@ -33,16 +33,6 @@ namespace RSSTools
         /// </summary>
         public string EncodedContent { get; }
 
-        /// <summary>
-        /// The list of relevant words present in the article.
-        /// </summary>
-        /// <remarks>
-        /// Only nouns are considered relevant words,
-        /// verbs, adjectives, adverbs, pronouns and prepositions
-        /// won't be taken into account.
-        /// </remarks>
-        public List<Word> RelevantWords { get; }
-
         internal Article(
             string date,
             string title,

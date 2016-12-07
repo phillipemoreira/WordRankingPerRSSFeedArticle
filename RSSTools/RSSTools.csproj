@@ -40,14 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Article.cs" />
+    <Compile Include="Internal\FeedToosls.cs" />
+    <Compile Include="Internal\POSTagger.cs" />
+    <Compile Include="Models\Article.cs" />
     <Compile Include="Exceptions\EmptyORNullURIException.cs" />
     <Compile Include="Exceptions\FeedMalformedException.cs" />
-    <Compile Include="Feed.cs" />
+    <Compile Include="Models\Feed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RSSReader.cs" />
-    <Compile Include="Word.cs" />
-    <Compile Include="XMLParser.cs" />
+    <Compile Include="API\RSSReader.cs" />
+    <Compile Include="Models\Word.cs" />
+    <Compile Include="Internal\XMLParser.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -22,9 +22,6 @@ namespace RSSTools
         {
             this.Text = text;
             AppearanceCountPerArticle = new Dictionary<string, int>();
-
-            AppearanceCountPerArticle.Add("ArtigoTeste" + Text, 5);
-            AppearanceCountPerArticle.Add("ArtigoTeste2" + Text, 5);
         }
 
         internal void AddArticleAppearance(string articleTittle, int appearanceCount)
