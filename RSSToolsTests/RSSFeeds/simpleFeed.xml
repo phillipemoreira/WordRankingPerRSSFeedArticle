@@ -10,21 +10,21 @@
       <link>http://test.com/firstArticle</link>
       <pubDate>Fri, 02 Dec 2016 20:55:38</pubDate>>
       <description>Description of first article.</description>
-      <content:encoded>Thor Jim, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them.</content:encoded>
+      <content:encoded>22 Thor Jim, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22</content:encoded>
     </item>
     <item>
       <title>Second Article</title>
       <link>http://test.com/secondArticle</link>
       <pubDate>Sat, 03 Dec 2016 21:55:38</pubDate>>
       <description>Description of second article.</description>
-      <content:encoded>Out of nowhere, some Storm started and we all looked at Thor because we thought he did it, but it turns out, it was actually Erik. Erik did it in order for us to open a portal to the land of Yoshi, where we could eat some apples and play in some other beach.</content:encoded>
+      <content:encoded>22 Out of nowhere, some Storm started and we all looked at Thor because we thought he did it, but it turns out, it was actually Erik. Erik did it in order for us to open a portal to the land of Yoshi, where we could eat some apples and play in some other beach.</content:encoded>
     </item>
     <item>
       <title>Third Article</title>
       <link>http://test.com/thirdArticle</link>
       <pubDate>Sun, 04 Dec 2016 22:55:38</pubDate>>
       <description>Description of third article.</description>
-      <content:encoded>When we got back from the land of Yoshi, I woke up and realized it was a dream, a bad dream, a dream I only had because Jim put some Gim in my drink. Today all I can think of is my friends in the beach, all of them: Thor, Jim, Erik and Yoshi.</content:encoded>
+      <content:encoded>22 When we got back from the land of Yoshi, I woke up and realized it was a dream, a bad dream, a dream I only had because Jim put some Gim in my drink. Today all I can think of is my friends in the beach, all of them: Thor, Jim, Erik and Yoshi.</content:encoded>
     </item>
   </channel>
 </rss>

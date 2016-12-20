@@ -25,17 +25,14 @@ namespace RSSTools
         public POSCategory Category { get; set; }
     }
 
-    internal class POSTagger
+    internal class POSTagger : IRelevantWordExtractor
     {
         List<POS> partsOfSpeach;
 
-        internal POSTagger(string text)
+        public List<string> Extract(string text)
         {
             partsOfSpeach = Tag(text);
-        }
 
-        internal List<string> ExtractNouns()
-        {
             return partsOfSpeach
                 .Where(c => c.Category == POSCategory.Noun)
                 .Select(p => p.Text).ToList();

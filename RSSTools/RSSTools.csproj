@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Internal\FeedToosls.cs" />
-    <Compile Include="Internal\POSTagger.cs" />
+    <Compile Include="Internal\FeedTools.cs" />
+    <Compile Include="Internal\RelevantWordHandling\ExclusionListExtractor.cs" />
+    <Compile Include="Internal\RelevantWordHandling\IRelevantWordExtractor.cs" />
+    <Compile Include="Internal\RelevantWordHandling\POSTagger.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Exceptions\EmptyORNullURIException.cs" />
     <Compile Include="Exceptions\FeedMalformedException.cs" />

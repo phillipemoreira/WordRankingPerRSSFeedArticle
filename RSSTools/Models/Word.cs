@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace RSSTools
 {
@@ -21,7 +22,10 @@ namespace RSSTools
         /// <summary>
         /// The total of times the word appeared in the feed.
         /// </summary>
-        public int AppearanceCount { get; }
+        public int AppearanceCount
+        {
+            get { return AppearanceCountPerArticle.Sum(a => a.NumberOfTimesInArticle) ; }
+        }
 
         /// <summary>
         /// Returns the appearnce count of the word in each of the feeds article.

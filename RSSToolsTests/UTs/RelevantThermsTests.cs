@@ -31,6 +31,7 @@ namespace RSSTools.Tests
         public void ReaderMustidentifyFeedsMostRelevantWord()
         {
             // Arrange
+
             reader = RSSReader.Read(simpleFeedURI);
 
             // Act
@@ -64,17 +65,17 @@ namespace RSSTools.Tests
             Assert.AreEqual("Erik", mostRelevantWords[0].Text);
             Assert.AreEqual(5, mostRelevantWords[0].AppearanceCount);
 
-            Assert.AreEqual("Thor", mostRelevantWords[0].Text);
-            Assert.AreEqual(4, mostRelevantWords[0].AppearanceCount);
+            Assert.AreEqual("Thor", mostRelevantWords[1].Text);
+            Assert.AreEqual(4, mostRelevantWords[1].AppearanceCount);
 
-            Assert.AreEqual("Yoshi", mostRelevantWords[0].Text);
-            Assert.AreEqual(4, mostRelevantWords[0].AppearanceCount);
+            Assert.AreEqual("Yoshi", mostRelevantWords[2].Text);
+            Assert.AreEqual(4, mostRelevantWords[2].AppearanceCount);
 
-            Assert.AreEqual("Jim", mostRelevantWords[0].Text);
-            Assert.AreEqual(3, mostRelevantWords[0].AppearanceCount);
+            Assert.AreEqual("Jim", mostRelevantWords[3].Text);
+            Assert.AreEqual(3, mostRelevantWords[3].AppearanceCount);
 
-            Assert.AreEqual("beach", mostRelevantWords[0].Text);
-            Assert.AreEqual(3, mostRelevantWords[0].AppearanceCount);
+            Assert.AreEqual("beach", mostRelevantWords[4].Text);
+            Assert.AreEqual(3, mostRelevantWords[4].AppearanceCount);
         }
 
         /// <summary>
@@ -123,7 +124,7 @@ namespace RSSTools.Tests
             reader = RSSReader.Read(simpleFeedURI);
 
             // Act
-            var mostRelevantWords = reader.GetMostRelevantWords(1);
+            var mostRelevantWords = reader.GetMostRelevantWords(5);
 
             // Assert
             this.AssertAppearnceCountPerArticle(mostRelevantWords,

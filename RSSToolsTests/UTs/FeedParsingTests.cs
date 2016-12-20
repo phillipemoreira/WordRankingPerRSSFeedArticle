@@ -100,15 +100,15 @@ namespace RSSTools.Tests
             Assert.IsTrue(articles.Count == 3);
 
             this.AssertArticle(articles[0], "Fisrt Article", "Description of first article.", "http://test.com/firstArticle",
-                new DateTime(2016, 12, 02, 20, 55, 38), "Thor Jim, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them.");
+                new DateTime(2016, 12, 02, 20, 55, 38), "22 Thor Jim, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22");
 
             this.AssertArticle(articles[1], "Second Article", "Description of second article.", "http://test.com/secondArticle",
-                new DateTime(2016, 12, 03, 21, 55, 38), "Out of nowhere, some Storm started and we all looked at Thor because we thought he did it, "
+                new DateTime(2016, 12, 03, 21, 55, 38), "22 Out of nowhere, some Storm started and we all looked at Thor because we thought he did it, "
                 + "but it turns out, it was actually Erik. Erik did it in order for us to open a portal to the land of Yoshi, where we could eat some "
                 + "apples and play in some other beach.");
 
             this.AssertArticle(articles[2], "Third Article", "Description of third article.", "http://test.com/thirdArticle",
-                new DateTime(2016, 12, 04, 22, 55, 38), "When we got back from the land of Yoshi, I woke up and realized it was a dream, a bad dream, "
+                new DateTime(2016, 12, 04, 22, 55, 38), "22 When we got back from the land of Yoshi, I woke up and realized it was a dream, a bad dream, "
                 + "a dream I only had because Jim put some Gim in my drink. Today all I can think of is my friends in the beach, all of them: Thor, "
                 + "Jim, Erik and Yoshi.");
         }
