@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using RSSTools.Exceptions;
-using System.IO;
 
 namespace RSSTools.Tests
 {
@@ -12,7 +9,7 @@ namespace RSSTools.Tests
     /// Tests contained in this class require internet connection in order to run.
     /// </remarks>
     [TestClass()]
-    public class ARSTechnicaPartingTests
+    public class ARSTechnicaParsingTests
     {
         string arstechnicaFeedURL = @"http://feeds.arstechnica.com/arstechnica/technology-lab";
 

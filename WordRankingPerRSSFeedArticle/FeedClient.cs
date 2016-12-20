@@ -68,7 +68,7 @@ namespace WordRankingPerRSSFeedArticle
 
                 foreach (var item in word.AppearanceCountPerArticle)
                 {
-                    var row = new ListViewItem(item.Value.ToString(), item.Key.ToString());
+                    var row = new ListViewItem(item.NumberOfTimesInArticle.ToString(), item.ArticleTitle);
                     lvWordArticle.Items.Add(row);
                 }
             }

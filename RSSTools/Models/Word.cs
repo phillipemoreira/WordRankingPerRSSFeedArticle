@@ -1,8 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace RSSTools
 {
+    public class AppearanceCountWordArticle
+    {
+        public string ArticleTitle;
+        public int NumberOfTimesInArticle;
+    }
+
     /// <summary>
     /// The representation of an word present in the feed's articles.
     /// </summary>
@@ -14,26 +19,24 @@ namespace RSSTools
         public string Text { get; }
 
         /// <summary>
+        /// The total of times the word appeared in the feed.
+        /// </summary>
+        public int AppearanceCount { get; }
+
+        /// <summary>
         /// Returns the appearnce count of the word in each of the feeds article.
         /// </summary>
-        public Dictionary<string, int> AppearanceCountPerArticle { get; }
+        public List<AppearanceCountWordArticle> AppearanceCountPerArticle { get; }
 
         internal Word (string text)
         {
             this.Text = text;
-            AppearanceCountPerArticle = new Dictionary<string, int>();
+            AppearanceCountPerArticle = new List<AppearanceCountWordArticle>();
         }
 
         internal void AddArticleAppearance(string articleTittle, int appearanceCount)
         {
-            if (!AppearanceCountPerArticle.ContainsKey(articleTittle))
-            {
-                AppearanceCountPerArticle.Add(articleTittle, appearanceCount);
-            }
-            else
-            {
-                throw new Exception("Article '{0}' was already taken into account");
-            }
+            AppearanceCountPerArticle.Add(new AppearanceCountWordArticle() { ArticleTitle= articleTittle, NumberOfTimesInArticle = appearanceCount });
         }
     }
 }
