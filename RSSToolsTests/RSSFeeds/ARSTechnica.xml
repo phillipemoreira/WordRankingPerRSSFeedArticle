@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.arstechnica.com/~d/styles/itemcontent.css"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+
+  <channel>
+    <title>Technology Lab – Ars Technica</title>
+
+    <link>http://arstechnica.com</link>
+    <description>Serving the Technologist for more than a decade. IT news, reviews, and analysis.</description>
+    <lastBuildDate>Thu, 22 Dec 2016 20:16:25 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <generator>https://wordpress.org/?v=4.6.1</generator>
+
+    <image>
+      <url>https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-32x32.png</url>
+      <title>Technology Lab – Ars Technica</title>
+      <link>http://arstechnica.com</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.arstechnica.com/arstechnica/technology-lab" />
+    <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="arstechnica/technology-lab" />
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+    <item>
+      <title>Canada sets universal broadband goal of 50Mbps and unlimited data for all</title>
+      <link>http://arstechnica.com/information-technology/2016/12/canada-sets-universal-broadband-goal-of-50mbps-and-unlimited-data-for-all/</link>
+      <pubDate>Thu, 22 Dec 2016 16:15:06 +0000</pubDate>
+      <dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
+      <category><![CDATA[Law & Disorder]]></category>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[Canada]]></category>
+      <category><![CDATA[Universal broadband]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1014569</guid>
+      <description><![CDATA[$750 million fund created to connect rural and remote areas.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/canada-flag-800x400.png"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/canada-flag.png" class="enlarge-link" data-height="500" data-width="1000">Enlarge</a> </p>  </figure><div><a name="page-1"></a></div>
+<p>Canada's telecom regulator yesterday declared that broadband Internet must be considered "a basic telecommunications service for all Canadians" and created a fund to connect rural and remote communities. With this decision, high-speed broadband is now treated as an essential technology similar to voice service.</p>
+<p>All Canadians should be able to purchase home Internet with 50Mbps download speeds and 10Mbps uploads, and they should have the option of purchasing unlimited data, the Canadian Radio-Television and Telecommunications Commission (CRTC) <a href="http://news.gc.ca/web/article-en.do?nid=1172599">announcement</a> said. A <a href="http://news.gc.ca/web/article-en.do?nid=1172419">new fund</a> will make $750 million available over the next five years to support projects in areas where that level of broadband isn't available.</p>
+<p>Money will be distributed to applicants based upon a competitive process. Funding can be used either for fixed broadband service or to upgrade mobile networks, but the goals of 50Mbps/10Mbps and unlimited data for all is specifically for home Internet service. About 10 percent will be allocated to communities that are dependent on satellite access.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/canada-sets-universal-broadband-goal-of-50mbps-and-unlimited-data-for-all/#p3">Read 8 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/canada-sets-universal-broadband-goal-of-50mbps-and-unlimited-data-for-all/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Raspberry Pi’s PIXEL Linux desktop environment now available for x86 PCs</title>
+      <link>http://arstechnica.com/information-technology/2016/12/raspberry-pi-pixel-pc-download-details/</link>
+      <pubDate>Thu, 22 Dec 2016 13:36:40 +0000</pubDate>
+      <dc:creator><![CDATA[Sebastian Anthony]]></dc:creator>
+      <category><![CDATA[Gear & Gadgets]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[Linux]]></category>
+      <category><![CDATA[lxde]]></category>
+      <category><![CDATA[pixel desktop]]></category>
+      <category><![CDATA[Raspberry Pi]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1014555</guid>
+      <description><![CDATA[PIXEL is a clean, modern desktop environment, "the GNU/Linux we would want to use."]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+
+
+
+
+
+<div><a name="page-1"></a></div>
+            <img src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2016/12/VirtualBox_PIXEL-CD_18_12_2016_10_24_42-980x735.png"><p>
+                      </p>
+      
+
+<p>In a rather curious turn, he Raspberry Pi foundation has released an x86 PC port of its PIXEL+Debian Linux desktop environment.</p>
+<p>PIXEL (which is a clunky backronym for Pi Improved Xwindows Environment, Lightweight) is an extensively modified version of the LXDE X11 desktop environment. It was originally released in September for use with <a href="http://arstechnica.co.uk/tag/raspberry-pi/">Raspberry Pi</a> single-board computers, but now it's also been <a href="https://www.raspberrypi.org/blog/pixel-pc-mac/">packaged up for x86 PCs</a>. You can boot your Windows or Mac PC into the PIXEL desktop environment right now, if you so wish.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/raspberry-pi-pixel-pc-download-details/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/raspberry-pi-pixel-pc-download-details/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Firefox takes the next step toward rolling out multi-process to everyone</title>
+      <link>http://arstechnica.com/information-technology/2016/12/firefox-takes-the-next-step-towards-rolling-out-multi-process-to-everyone/</link>
+      <pubDate>Wed, 21 Dec 2016 23:51:57 +0000</pubDate>
+      <dc:creator><![CDATA[Peter Bright]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[browsers]]></category>
+      <category><![CDATA[development]]></category>
+      <category><![CDATA[firefox]]></category>
+      <category><![CDATA[Mozilla]]></category>
+      <category><![CDATA[open source]]></category>
+      <category><![CDATA[security]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1014437</guid>
+      <description><![CDATA[Firefox gets closer to offering the same security and stability as competition.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2015/08/red-panda-640x507.jpg"><p class="caption" style="font-size:0.8em">A single Firefox process. (credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/rprata/3319691470/in/photolist-64mhBQ">Roger</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>With Firefox 50, Mozilla has rolled out the <a href="https://blog.mozilla.org/futurereleases/2016/12/21/update-on-multi-process-firefox/">first major piece</a> of its new multi-process architecture. Firefox 50 is also Firefox's current stable release.</p>
+<p>Edge, Internet Explorer, Chrome, and Safari all have a multiple process design that separates their rendering engine—the part of the browser that reads and interprets HTML, CSS, and JavaScript—from the browser frame. They do this for stability reasons (if the rendering process crashes, it doesn't kill the entire browser) and security reasons (the rendering process can be run in a low-privilege sandbox, so exploitable flaws in the rendering engine are harder to take advantage of).</p>
+<p>Moreover, these browsers can all create <em>multiple</em> rendering engine processes and use different processes for different tabs. This means that the scope of a crash is narrowed even further, typically to a single tab. Internet Explorer and Chrome both implemented this long ago, in 2009.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/firefox-takes-the-next-step-towards-rolling-out-multi-process-to-everyone/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/firefox-takes-the-next-step-towards-rolling-out-multi-process-to-everyone/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>DOD re-ups with Microsoft for rights to total code access [Update: not really]</title>
+      <link>http://arstechnica.com/information-technology/2016/12/dod-re-ups-with-microsoft-for-rights-to-total-code-access/</link>
+      <pubDate>Wed, 21 Dec 2016 16:57:05 +0000</pubDate>
+      <dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[DISA]]></category>
+      <category><![CDATA[microsoft]]></category>
+      <category><![CDATA[Windows]]></category>
+
+      <guid isPermaLink="false">http://arstechnica.com/?p=1014129</guid>
+      <description><![CDATA[$927 million is follow-up to "Blue Badge Cardholder" access started in 2013.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/dod-laptop-800x531.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/dod-laptop.jpg" class="enlarge-link" data-height="680" data-width="1024">Enlarge</a> <span class="sep">/</span> This is not the time to call Windows Support. (credit: National Guard /DOD)</p>  </figure><div><a name="page-1"></a></div>
+<p><em><strong>Update, 4:54 PM EDT:</strong> A correction to the DOD contract announcement is pending. Microsoft will only be providing access to code through Microsoft employees, and "access rights to source code" are not included in the contract language. Our original story continues below; it will be updated with the corrected statement from DOD is available.</em></p>
+<p><em><strong>Update, 5:37 PM EDT: </strong>A DISA spokesperson told Ars, that contrary to some interpretations of the contracting announcement, </em>"<span class="s1">The Department of Defense does not, and will not, have access to Microsoft's proprietary source codes. The METSS-II contract is a sole-source follow-on contract to continue and leverage Microsoft support services."</span></p>
+<p>The US Department of Defense announced yesterday that the Defense Information Systems Agency (DISA)—the DOD's internal IT provider—had awarded Microsoft a $927 million, five-year contract to provide what it calls "Microsoft Blue Badge Cardholder Support." The contract is a combination of site license, consulting services, access to Microsoft developers, and actual source code [<strong>Update,5:37 pm</strong>: that access is through Microsoft employees—not direct access]. "These services require access rights to Microsoft's proprietary (closed-source) code, which is licensed under exclusive legal right of Microsoft, and are required to support the Department of Defense's mission," the <a href="http://www.defense.gov/News/Contracts/Contract-View/Article/1035122">Department of Defense announcement read</a>.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/dod-re-ups-with-microsoft-for-rights-to-total-code-access/#p3">Read 4 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/dod-re-ups-with-microsoft-for-rights-to-total-code-access/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>AT&amp;T unveils network-level robocall blocking, call spam warnings</title>
+      <link>http://arstechnica.com/information-technology/2016/12/att-unveils-network-level-robocall-blocking-call-spam-warnings/</link>
+      <pubDate>Wed, 21 Dec 2016 16:18:54 +0000</pubDate>
+      <dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[AT&T]]></category>
+      <category><![CDATA[robocall]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1014007</guid>
+      <description><![CDATA[Call blocking works on iPhones and some Android phones for postpaid customers.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/att-call-protect-800x738.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/att-call-protect.jpg" class="enlarge-link" data-height="1148" data-width="1244">Enlarge</a> (credit: <a rel="nofollow" class="caption-link" href="https://itunes.apple.com/us/app/at-t-call-protect/id1181632589?mt=8">AT&amp;T</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>AT&amp;T yesterday unveiled free robocall blocking for postpaid smartphone customers.</p>
+<p>Named <a href="https://www.att.com/offers/call-protect.html">Call Protect</a>, the service blocks some fraud calls at the network level before they reach customers' phones. In other cases, when it's less clear whether the call is fraudulent, Call Protect doesn't block the call but shows "suspected spam warnings on the incoming call screen which let customers choose whether or not to answer calls that originate from a suspected spam source," <a href="http://about.att.com/story/att_call_protect.html">AT&amp;T's announcement</a> said.</p>
+<p>At least for now, the service is available only for AT&amp;T postpaid wireless customers with iPhones or Android phones that support AT&amp;T's <a href="https://www.att.com/shop/wireless/features/hd-voice.html">HD Voice</a> technology. Call Protect is not automatically enabled. Instead, customers can add the feature in their AT&amp;T account settings or the Call Protect app for <a href="https://itunes.apple.com/us/app/at-t-call-protect/id1181632589?mt=8">iPhone</a> and <a href="https://play.google.com/store/apps/details?id=com.att.callprotect">Android</a>. Some Android users complained in the Google Play store reviews that Call Protect doesn't support unlocked devices like the Google Pixel.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/att-unveils-network-level-robocall-blocking-call-spam-warnings/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/att-unveils-network-level-robocall-blocking-call-spam-warnings/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>ESA and Inmarsat deploy real-time “4D” air traffic control system</title>
+      <link>http://arstechnica.com/information-technology/2016/12/esa-inmarsat-atc-iris-precursor-details/</link>
+      <pubDate>Wed, 21 Dec 2016 13:46:43 +0000</pubDate>
+      <dc:creator><![CDATA[Tom Mendelsohn]]></dc:creator>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[air travel]]></category>
+      <category><![CDATA[ESA]]></category>
+      <category><![CDATA[inmarsat]]></category>
+      <category><![CDATA[satellite]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1013957</guid>
+      <description><![CDATA[Satellite-based system aims to modernize air traffic, make aircraft more efficient.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/Iris_terminal-800x893.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/Iris_terminal.jpg" class="enlarge-link" data-height="2347" data-width="2102">Enlarge</a> (credit: European Space Agency)</p>  </figure><div><a name="page-1"></a></div>
+<p>The European Space Agency is trialling the use of a new always-on satellite-based system in an effort to modernise Europe's, and thenceforth the world's air traffic control systems.</p>
+<p>Currently, depending on the territory and the aircraft, air traffic control uses a mix of radar, semi-regular location pings from the aircraft (ADS-B), and good ol' human-to-human chatter. This data is pumped into a computer system that calculates a path that each aircraft must follow to avoid collisions, obey any air space restrictions, and hopefully use as little fuel as possible.</p>
+<p>Airbus, Inmarsat, ESA, and various other aerospace partners believe that an advanced satellite-based system could allow for a higher density of aircraft in the skies, and more efficient flight paths. Thus, Inmarsat and ESA <a href="http://www.esa.int/Our_Activities/Telecommunications_Integrated_Applications/Preparing_for_air_traffic_control_via_satellite">announced today</a> that it has begun testing the Iris Precursor, which provides a secure high-capacity data link between planes and satellites, and between satellites and ground control.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/esa-inmarsat-atc-iris-precursor-details/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/esa-inmarsat-atc-iris-precursor-details/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>That drone sub Trump said China could keep—what was it doing, anyway?</title>
+      <link>http://arstechnica.com/information-technology/2016/12/the-bizarre-incident-of-the-underwater-drone-in-the-daytime/</link>
+      <pubDate>Tue, 20 Dec 2016 23:55:57 +0000</pubDate>
+      <dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
+      <category><![CDATA[Law & Disorder]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+
+      <guid isPermaLink="false">http://arstechnica.com/?p=1013795</guid>
+      <description><![CDATA[Underwater ”glider” snatched by the Chinese was getting its science on.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/USNS_Bowditch-800x624.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/USNS_Bowditch.jpg" class="enlarge-link" data-height="732" data-width="938">Enlarge</a> <span class="sep">/</span> The USNS Bowditch, doing its thing. </p>  </figure><div><a name="page-1"></a></div>
+<p>This past week, a submarine rescue vessel from the Chinese People's Liberation Army Navy (PLAN) came up along the USNS Bowditch, a US Navy civilian oceanographic vessel—and sent out a boat to snatch one of two uncrewed ocean "gliders" being recovered by the Americans. The snatch-and-grab triggered a week-long diplomatic standoff accompanied by tweets from the President-elect:</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">China steals United States Navy research drone in international waters - rips it out of water and takes it to China in unpresidented act.</p>
+<p>— Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/810121703288410112">December 17, 2016</a></p>
+</blockquote>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">We should tell China that we don't want the drone they stole back.- let them keep it!</p>
+<p>— Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/810288321880555520">December 18, 2016</a></p>
+</blockquote>
+<p>China <a href="http://www.cnn.com/2016/12/20/politics/china-drone-return/">gave the glider back today</a>. A Chinese Ministry of Foreign Affairs spokesperson claimed that his country's sailors saw the glider as a potential hazard and were acting responsibly when they grabbed it. "I want to say we strongly dislike the term 'steal' as it's entirely inaccurate," the spokesperson said. Earlier, Chinese officials claimed that the gliders were likely being used to spy on China's operations in the South China Sea or perhaps locate routes traveled by PLAN's submarine fleet.</p>
+<p>The gliders are long-endurance, slow-moving submarine drones that are used for oceanographic data collection. They can be remotely controlled on runs lasting as long as 30 days, and they use shifts in their own buoyancy to propel them.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/the-bizarre-incident-of-the-underwater-drone-in-the-daytime/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/the-bizarre-incident-of-the-underwater-drone-in-the-daytime/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Congrats, hackers: you’re now a munition (sort of)</title>
+      <link>http://arstechnica.com/tech-policy/2016/12/us-fails-in-bid-to-renegotiate-arms-trade-restrictions-on-exploit-data-export/</link>
+      <pubDate>Tue, 20 Dec 2016 22:01:50 +0000</pubDate>
+      <dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
+      <category><![CDATA[Law & Disorder]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+
+      <guid isPermaLink="false">http://arstechnica.com/?p=1013697</guid>
+      <description>
+        <![CDATA[Wassenaar rules require export licenses for anything that could be considered “intrusion software”—but not in US, yet.
+]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2014/12/ak-404-640x360.jpg"><p class="caption" style="font-size:0.8em">Guns, bullets, and malware samples—all now controlled under the Wassenaar Arrangement. (credit: Aurich Lawson)</p>  </figure><div><a name="page-1"></a></div>
+<p>If your work involves exploiting vulnerabilities in software, congratulations—you're potentially an arms merchant in the eyes of many governments. Your knowledge about how to hack could be classified as a munition.</p>
+<p>A United States delegation yesterday failed to convince all of the members of the Wassenaar Arrangement—a 41-country compact that sets guidelines for restricting exports of conventional weapons and "dual use goods"—to modify rules that would place export restrictions on technologies and data related to computer system exploits. And while the US government has so far declined to implement rules based on the existing convention, other countries may soon require export licenses from anyone who shares exploit data across borders—even in the form of security training.</p>
+<p>The changes governing "intrusion software" were adopted by the Wassenaar plenary in 2013, and they were set to be implemented by member countries last year. Those changes were intended to prevent repressive regimes from gaining access to commercial malware—such as the code sold by the <a href="http://arstechnica.com/security/2015/07/hacking-team-gets-hacked-invoices-show-spyware-sold-to-repressive-govts/">Italy-based Hacking Team</a> to Sudan and the surveillance tools from Blue Coat that were resold to Syria's Assad regime and used to catch dissident bloggers.</p>
+</div><p><a href="http://arstechnica.com/tech-policy/2016/12/us-fails-in-bid-to-renegotiate-arms-trade-restrictions-on-exploit-data-export/#p3">Read 11 remaining paragraphs</a> | <a href="http://arstechnica.com/tech-policy/2016/12/us-fails-in-bid-to-renegotiate-arms-trade-restrictions-on-exploit-data-export/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Google scales tiny mountain to hunt down crypto bugs</title>
+      <link>http://arstechnica.com/information-technology/2016/12/google-scales-tiny-mountain-to-hunt-down-crypto-bugs/</link>
+      <pubDate>Tue, 20 Dec 2016 20:15:02 +0000</pubDate>
+      <dc:creator><![CDATA[Peter Bright]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[cryptography]]></category>
+      <category><![CDATA[google]]></category>
+      <category><![CDATA[Java]]></category>
+      <category><![CDATA[open source]]></category>
+      <category><![CDATA[Programming]]></category>
+      <category><![CDATA[security]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1013393</guid>
+      <description><![CDATA[Google says its new set of crypto tests has already discovered real bugs.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/2093535958_d75cea0ca2_o-800x600.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/2093535958_d75cea0ca2_o.jpg" class="enlarge-link" data-height="600" data-width="800">Enlarge</a> <span class="sep">/</span> The view from Mount Wycheproof. It's not very spectacular. (credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/17352537@N00/2093535958">Prince Roy</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>Google's <a href="https://security.googleblog.com/2016/12/project-wycheproof.html">Project Wycheproof</a> is a new effort by Google to improve the security of widely used cryptography code.</p>
+<p>Many of the algorithms used in cryptography for encryption, decryption, and authentication are complicated, especially when asymmetric, public key cryptography is being used. Over the years, these complexities have resulted in a wide range of bugs in real crypto libraries and the software that uses them.</p>
+<p>Google's ambition with Project Wycheproof is to ensure that these known flaws are eradicated. The open source project contains a number of test cases that check for these known flaws; currently, there are more than 80 tests for <a href="https://github.com/google/wycheproof/blob/master/doc/bugs.md">40 different defects</a>. The project is limited in scope and realistically attainable, hence the name that Google has chosen: Mount Wycheproof is a hill that some claim is the world's smallest mountain. Its peak is 237 meters above sea level and just 43 meters above the surrounding plain. Scaling such a mountain is a straightforward proposition.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/google-scales-tiny-mountain-to-hunt-down-crypto-bugs/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/google-scales-tiny-mountain-to-hunt-down-crypto-bugs/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Op-ed: Why I’m not giving up on PGP</title>
+      <link>http://arstechnica.com/information-technology/2016/12/signal-does-not-replace-pgp/</link>
+      <pubDate>Tue, 20 Dec 2016 13:44:40 +0000</pubDate>
+      <dc:creator><![CDATA[Ars Staff]]></dc:creator>
+      <category><![CDATA[Risk Assessment]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[gnupg]]></category>
+      <category><![CDATA[GPG]]></category>
+      <category><![CDATA[pgp]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1013077</guid>
+      <description><![CDATA[Key discovery is an issue, but Signal can't replace PGP.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2015/02/gnupgpg-lock-640x360.jpg"><p class="caption" style="font-size:0.8em">(credit: Aurich Lawson / Thinkstock)</p>  </figure><p><em>Neal H. Walfield is a hacker at g10code working on GnuPG. This op-ed was written for Ars Technica by Walfield, in response to Filippo Valsorda's "<a href="http://arstechnica.com/security/2016/12/op-ed-im-giving-up-on-pgp/">I'm giving up on PGP</a>" story that was published on Ars last week.</em></p>
+    
+
+<div><a name="page-1"></a></div>
+<p>Every once in a while, a prominent member of the security community publishes an article about how horrible <a href="https://www.ietf.org/rfc/rfc4880.txt">OpenPGP</a> is. Matthew Green wrote one <a href="https://blog.cryptographyengineering.com/2014/08/13/whats-matter-with-pgp/">in 2014</a> and Moxie Marlinspike wrote one <a href="https://moxie.org/blog/gpg-and-me/">in 2015</a>. The most recent was written by Filippo Valsorda, <a href="http://arstechnica.co.uk/security/2016/12/op-ed-im-giving-up-on-pgp/">here on the pages of Ars Technica</a>, which Matthew Green <a href="https://twitter.com/matthew_d_green/status/806135647199252480">says</a> "sums up the main reason I think PGP is so bad and dangerous."</p>
+<p>In this article I want to respond to the points that Filippo raises. In short, Filippo is right about some of the details, but wrong about the big picture. For the record, I work on <a href="https://www.gnupg.org/">GnuPG</a>, the most popular OpenPGP implementation.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/signal-does-not-replace-pgp/#p3">Read 21 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/signal-does-not-replace-pgp/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>The holographic anime “robot” that will keep house for lonely salarymen</title>
+      <link>http://arstechnica.com/information-technology/2016/12/the-anime-girlfriend-experience-gateboxs-ai-powered-holographic-home-robot/</link>
+      <pubDate>Sun, 18 Dec 2016 21:17:25 +0000</pubDate>
+      <dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[The Multiverse]]></category>
+
+      <guid isPermaLink="false">http://arstechnica.com/?p=1012391</guid>
+      <description><![CDATA[Gatebox connects home devices to an interactive anime "waifu" for "a new, shared lifestyle".]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox3-800x555.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox3.jpg" class="enlarge-link" data-height="600" data-width="865">Enlarge</a> <span class="sep">/</span> She'll keep a light on for you. (credit: <a rel="nofollow" class="caption-link" href="http://gatebox.ai/">vinclu</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>The future is apparently here. And it's creepier than we ever imagined—even when we were <a href="http://arstechnica.com/information-technology/2013/07/bearduino-hacking-teddy-ruxpin-with-arduino/">playing around with tethering Teddy Ruxpin to the Internet</a>. A Japanese company called <a href="http://vinclu.me/about/">Vinclu</a> ("a company that makes crazy things and supports crazy people") is now taking pre-orders from Japan and the United States for a new interactive, artificial-intelligence driven home automation system. Called <a href="http://gatebox.ai/">Gatebox</a>, the new Internet-of-Things product takes Amazon's Alexa, Google Home, <a href="http://www.herthemovie.com/#/home">Spike Jonze's film <em>Her</em></a>, and the "holographic" anime characters of Vocaloid concerts to their unified natural conclusion.</p>
+<p></p>
+<div class="image shortcode-img left medium">
+<a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox.jpg"><img alt="Gatebox's out-of-the-box girlfriend persona." src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox-300x463.jpg" srcset="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox.jpg 2x"></a><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/gatebox.jpg" class="caption-link" rel="nofollow">Gatebox's out-of-the-box girlfriend persona.</a> </p>
+</div>Wait, what?
+<p>Gatebox, priced at ¥321,840 (about $2,700 US), is squarely targeted at young lonely salarymen and all brands of anime-obsessed otaku—promising the experience of "living with your favorite character." The size of a home coffee-maker, with a footprint no larger than a sheet of A4 printer paper, the device's main feature is a clear projection tube that displays a computer-animated avatar for the AI's "character." Vinclu apparently is planning multiple possible personalities for Gatebox—which, as part of the device's backstory, is a gateway to the dimension the character lives in.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/the-anime-girlfriend-experience-gateboxs-ai-powered-holographic-home-robot/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/the-anime-girlfriend-experience-gateboxs-ai-powered-holographic-home-robot/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Home routers under attack in ongoing malvertisement blitz</title>
+      <link>http://arstechnica.com/security/2016/12/home-routers-under-attack-in-ongoing-malvertisement-blitz/</link>
+      <pubDate>Fri, 16 Dec 2016 21:42:56 +0000</pubDate>
+      <dc:creator><![CDATA[Dan Goodin]]></dc:creator>
+      <category><![CDATA[Law & Disorder]]></category>
+      <category><![CDATA[Risk Assessment]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[DNSChanger]]></category>
+      <category><![CDATA[exploits]]></category>
+      <category><![CDATA[malvertising]]></category>
+      <category><![CDATA[routers]]></category>
+      <category><![CDATA[vulnerabilities]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1011785</guid>
+      <description><![CDATA[DNSChanger causes network computers to visit fraudulent domains.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/netgear.jpg"><p class="caption" style="font-size:0.8em">(credit: <a rel="nofollow" class="caption-link" href="https://commons.wikimedia.org/wiki/File:Netgear_dg834gv4_front.jpg">Gionnico</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>As you read these words, malicious ads on legitimate websites are targeting visitors with malware. But that malware doesn't infect their computers, researchers said. Instead, it causes unsecured routers to connect to fraudulent domains.</p>
+<p>Using a technique known as <a href="https://en.wikipedia.org/wiki/Steganography">steganography</a>, the ads hide malicious code in image data. The hidden code then redirects targets to webpages hosting DNSChanger, an exploit kit that infects routers running unpatched firmware or are secured with weak administrative passwords. Once a router is compromised, DNSChanger configures it to use an attacker-controlled <a href="https://en.wikipedia.org/wiki/Domain_Name_System">domain name system</a> server. This causes most computers on the network to visit fraudulent servers, rather than the servers corresponding to their official domain.</p>
+<p>Patrick Wheeler, director of threat intelligence for security firm Proofpoint, told Ars:</p>
+</div><p><a href="http://arstechnica.com/security/2016/12/home-routers-under-attack-in-ongoing-malvertisement-blitz/#p3">Read 7 remaining paragraphs</a> | <a href="http://arstechnica.com/security/2016/12/home-routers-under-attack-in-ongoing-malvertisement-blitz/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>T-Mobile gives out free DirecTV Now, says AT&amp;T is full of “crap”</title>
+      <link>http://arstechnica.com/information-technology/2016/12/t-mobile-exempts-atts-directv-now-from-data-caps/</link>
+      <pubDate>Fri, 16 Dec 2016 17:34:48 +0000</pubDate>
+      <dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[AT&T]]></category>
+      <category><![CDATA[directv now]]></category>
+      <category><![CDATA[t-mobile]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1011461</guid>
+      <description><![CDATA[T-Mobile will pay your DirecTV Now bill if you switch from AT&#38;T.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/01/t-mobile-binge-on-640x424.jpg"><p class="caption" style="font-size:0.8em">T-Mobile USA CEO John Legere announces Binge On. (credit: T-Mobile USA)</p>  </figure><div><a name="page-1"></a></div>
+<p>One of the biggest selling points of AT&amp;T's <a href="http://arstechnica.com/information-technology/2016/11/atts-35-directv-streaming-will-cost-60-unless-you-sign-up-right-away/">DirecTV Now service</a> is that it streams video without counting against data caps on the AT&amp;T mobile network. But T-Mobile USA customers will also be able to watch DirecTV Now without using up data, the carrier announced yesterday. DirecTV Now is one of the latest services added to <a href="https://www.t-mobile.com/offer/binge-on-streaming-video-list.html">Binge On</a>, which exempts dozens of video services from data caps as long as customers are willing to limit mobile viewing quality to about 480p.</p>
+<p>T-Mobile also promised to <a href="https://explore.t-mobile.com/switch-from-att-to-t-mobile">reimburse customers</a> for DirecTV Now for 12 months if they port a phone number from the AT&amp;T network to T-Mobile and purchase at least two lines. This offer consists of a $35 monthly bill credit, enough to cover the <a href="http://arstechnica.com/information-technology/2016/11/atts-35-directv-streaming-will-cost-60-unless-you-sign-up-right-away/">DirecTV Now promotional price</a>. This is a limited-time offer and cannot be combined with other offers like "<a href="https://www.t-mobile.com/offer/switch-carriers-no-early-termination-fee.html">Carrier Freedom</a>," which reimburses customers for early termination fees when they switch to T-Mobile.</p>
+<p>Customers who want the $35 monthly credit must sign up for the new $70-per-month T-Mobile One plans, which <a href="http://arstechnica.com/information-technology/2016/08/t-mobile-ends-cheaper-plans-and-imposes-new-limits-on-unlimited-data/">have no data caps</a> but impose limits on video resolution and mobile hotspot speeds unless subscribers pay extra. The Binge On data cap exemption is only necessary on other T-Mobile plans that have monthly data limits.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/t-mobile-exempts-atts-directv-now-from-data-caps/#p3">Read 5 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/t-mobile-exempts-atts-directv-now-from-data-caps/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>How an old Drawbridge helped Microsoft bring SQL Server to Linux</title>
+      <link>http://arstechnica.com/information-technology/2016/12/how-an-old-drawbridge-helped-microsoft-bring-sql-server-to-linux/</link>
+      <pubDate>Fri, 16 Dec 2016 17:00:10 +0000</pubDate>
+      <dc:creator><![CDATA[Peter Bright]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[development]]></category>
+      <category><![CDATA[Linux]]></category>
+      <category><![CDATA[microsoft]]></category>
+      <category><![CDATA[Operating systems]]></category>
+      <category><![CDATA[SQL Server]]></category>
+      <category><![CDATA[Windows]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1011131</guid>
+      <description><![CDATA[There are certainly risks involved, but a clever research project makes it all possible.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/drawbridge-800x534.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/drawbridge.jpg" class="enlarge-link" data-height="683" data-width="1024">Enlarge</a> (credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/tomhilton/1552710198/in/photolist-3nd3Du-cfuXPw-5HL6jc-cfuX8Q-VaEZ9-nebLbf-bzrcYu-7T6Peo-5F31EZ-5HL6nn-6NRCi2-nsRPTw-nsRPJo-5F31DZ-4LjStD-mZFWCS-nsRPAY-4Lp7xC-9L2msQ-SUKuf-cYA8wu-amhiYN-gWSP7q-5dC9Xx-7e23wZ-cGomQs-5j6uh1-8YAnA6-59rW99-5F7nD3-8gh8xL-5F35u6-af4bV1-mZEckc-amhiZQ-7GJjcV-4Lp5TS-6k8mJF-cTZRA7-5HQv4u-eFDAeF-cGovqw-5HLdPH-nEZDFB-oYg41U-evbQRd-nEZDFr-93KX5y-5iFvar-bnrUgC">Tom Hilton</a>)</p>  </figure><div><a name="page-1"></a></div>
+<p>When in March this year Microsoft announced that it was <a href="http://arstechnica.com/information-technology/2016/03/sql-server-for-linux-coming-in-mid-2017/">bringing SQL Server to Linux</a> the reaction was one of surprise, with the announcement prompting two big questions: why and how?</p>
+<p>SQL Server is one of Microsoft's major Windows applications, helping to drive Windows sales and keep people on the Windows platform. If you can run SQL Server on Linux, well, that's one less reason to use Windows.</p>
+<p>And while SQL Server does share heritage with Sybase SQL Server (now called SAP ASE), a Unix database server that Microsoft ported to Windows, that happened a long time ago. Since 1993, when Sybase and Microsoft went their separate ways, the products have diverged and, for the last 23 years, Microsoft SQL Server has been strictly a Windows application. That doesn't normally make for easy porting.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/how-an-old-drawbridge-helped-microsoft-bring-sql-server-to-linux/#p3">Read 35 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/how-an-old-drawbridge-helped-microsoft-bring-sql-server-to-linux/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>0-days hitting Fedora and Ubuntu open desktops to a world of hurt</title>
+      <link>http://arstechnica.com/security/2016/12/fedora-and-ubuntu-0days-show-that-hacking-desktop-linux-is-now-a-thing/</link>
+      <pubDate>Thu, 15 Dec 2016 21:36:08 +0000</pubDate>
+      <dc:creator><![CDATA[Dan Goodin]]></dc:creator>
+      <category><![CDATA[Risk Assessment]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[desktop]]></category>
+      <category><![CDATA[exploits]]></category>
+      <category><![CDATA[Linux]]></category>
+      <category><![CDATA[vulnerabilities]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1010865</guid>
+      <description><![CDATA[If your desktop runs a mainstream release of Linux, chances are you're vulnerable.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/fedora-25-exploit-800x576.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/fedora-25-exploit.jpg" class="enlarge-link" data-height="864" data-width="1200">Enlarge</a> </p>  </figure><div><a name="page-1"></a></div>
+<p>If you run a mainstream distribution of Linux on a desktop computer, there's a good chance security researcher Chris Evans can hijack it when you do nothing more than open or even browse a specially crafted music file. And in the event you're running Chrome on the just-released Fedora 25, his code-execution attack works as a classic drive-by.</p>
+<p>The zero-day exploits, which Evans <a href="https://scarybeastsecurity.blogspot.com/2016/12/redux-compromising-linux-using-snes.html">published on Tuesday</a>, are the latest to challenge the popular conceit that Linux, at least in its desktop form, is more immune to the types of attacks that have felled Windows computers for more than a decade and have increasingly snared Macs in recent years.</p>
+<p>While Evans' attacks won't work on most Linux servers, they will reliably compromise most desktop versions of Linux, which employees at Google, Facebook, and other security conscious companies often use in an attempt to avoid the pitfalls of Windows and Mac OS X. Three weeks ago, Evans <a href="http://arstechnica.com/security/2016/11/elegant-0day-unicorn-underscores-serious-concerns-about-linux-security/">released a separate Linux zero-day</a> that had similarly dire consequences.</p>
+</div><p><a href="http://arstechnica.com/security/2016/12/fedora-and-ubuntu-0days-show-that-hacking-desktop-linux-is-now-a-thing/#p3">Read 8 remaining paragraphs</a> | <a href="http://arstechnica.com/security/2016/12/fedora-and-ubuntu-0days-show-that-hacking-desktop-linux-is-now-a-thing/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Evernote’s new privacy policy raises eyebrows</title>
+      <link>http://arstechnica.com/tech-policy/2016/12/evernotes-new-privacy-policy-raises-eyebrows/</link>
+      <pubDate>Wed, 14 Dec 2016 21:55:28 +0000</pubDate>
+      <dc:creator><![CDATA[Annalee Newitz]]></dc:creator>
+      <category><![CDATA[Law & Disorder]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[Evernote]]></category>
+      <category><![CDATA[privacy policy]]></category>
+
+      <guid isPermaLink="false">http://arstechnica.com/?p=1010367</guid>
+      <description><![CDATA[You cannot opt out of having humans read your notes.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+
+
+
+
+
+<div><a name="page-1"></a></div>
+<p>Evernote is testing out machine learning algorithms on all the reams of content it has accumulated over the past eight years. But when it <a href="https://help.evernote.com/hc/en-us/articles/235660588">announced this move</a> with a new privacy policy that goes into effect January 24, 2017, the company also pointed out something that many users hadn't realized: Evernote staffers will sometimes look at the content of your notes.</p>
+<p>There are actually a number of perfectly good reasons why Evernote employees might need to read note content, and they are explained clearly in Evernote's Privacy Policy. These include complying with a lawful court order, investigating whether there has been a violation of the Terms of Service, and "protect[ing] against potential spam, malware or other security concerns."</p>
+<p>What concerned some users, including <a href="https://twitter.com/s_m_i/status/809073489218924544">journalist and former BuzzFeed News Editor Stacy-Marie Ishmael</a>, is a vaguely worded section of the <a href="https://evernote.com/legal/privacy.php">Privacy Policy</a> stating that employees will look at your notes "for troubleshooting purposes or to maintain and improve the Service." She noted on Twitter that this clause is "so broad as to be all inclusive" and that it's particularly worrying for a <a href="https://twitter.com/s_m_i/status/809079140540235777">"minority journalist in 2016."</a> Given the <a href="http://money.cnn.com/2016/11/13/media/donald-trump-new-york-times/">hostile stance</a> President-elect Donald Trump and some of his supporters have shown toward journalists, it's possible that journalists who want to preserve the anonymity of sources will have to stop using services like Evernote.</p>
+</div><p><a href="http://arstechnica.com/tech-policy/2016/12/evernotes-new-privacy-policy-raises-eyebrows/#p3">Read 5 remaining paragraphs</a> | <a href="http://arstechnica.com/tech-policy/2016/12/evernotes-new-privacy-policy-raises-eyebrows/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Flash will become click-to-run in Edge, Chrome in 2017</title>
+      <link>http://arstechnica.com/information-technology/2016/12/flash-will-become-click-to-run-in-edge-chrome-in-2017/</link>
+      <pubDate>Wed, 14 Dec 2016 20:42:14 +0000</pubDate>
+      <dc:creator><![CDATA[Peter Bright]]></dc:creator>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[browsers]]></category>
+      <category><![CDATA[EDGE]]></category>
+      <category><![CDATA[flash]]></category>
+      <category><![CDATA[microsoft]]></category>
+      <category><![CDATA[Windows]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1010237</guid>
+      <description><![CDATA[A few sites will be whitelisted; everywhere else will have it disabled by default.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2015/02/uninstall-flash-640x329.jpg"></figure><div><a name="page-1"></a></div>
+<p>The Windows 10 <a href="http://arstechnica.com/information-technology/2016/10/windows-10-creators-update-will-be-coming-for-free-this-spring/">Creators Update</a>, due in spring next year, is going to make almost all Flash content click-to-run in the Edge browser.</p>
+<p>The Windows 10 Anniversary Update already applied click-to-run to <a href="http://arstechnica.com/information-technology/2016/04/edge-to-follow-chromes-lead-make-flash-ads-click-to-play/">most online advertising</a>, following in the steps of Safari and Chrome. In the next major update, Microsoft will <a href="https://blogs.windows.com/msedgedev/2016/12/14/edge-flash-click-run/">extend the restrictions on Flash</a>. By default, Flash will not be loaded or offered to sites, and users will have to opt to enable it on a site-by-site basis. A handful of popular, Flash-dependent sites will see the plugin enabled automatically, with Microsoft intending to cut down this whitelist as more and more sites switch their interactive content to be native HTML5.</p>
+<p>Earlier this year, Google <a href="https://blog.google/products/chrome/flash-and-chrome/">announced a similar plan for Chrome</a>. Currently, <a href="https://blog.chromium.org/2016/12/roll-out-plan-for-html5-by-default.html">1 percent of users of the stable Chrome 55 release</a> have click-to-run enabled by default, along with 50 percent of users of the Chrome 56 beta release. When the stable Chrome 56 release is made in February, Flash click-to-run will be enabled by default for everyone. Google also intends to whitelist the ten most popular flash-dependent sites, though it says that this whitelist will only be in place for a year.</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/flash-will-become-click-to-run-in-edge-chrome-in-2017/#p3">Read 3 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/flash-will-become-click-to-run-in-edge-chrome-in-2017/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>AT&amp;T’s DirecTV Now plagued with outages and sports blackouts</title>
+      <link>http://arstechnica.com/information-technology/2016/12/atts-directv-now-plagued-with-outages-and-sports-blackouts/</link>
+      <pubDate>Wed, 14 Dec 2016 18:47:36 +0000</pubDate>
+      <dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[AT&T]]></category>
+      <category><![CDATA[directv now]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1010101</guid>
+      <description><![CDATA[AT&#38;T vows to fix technical errors; licensing restrictions may also be a problem.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/11/att-directv-now-800x567.png"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/11/att-directv-now.png" class="enlarge-link" data-height="1038" data-width="1465">Enlarge</a> (credit: AT&amp;T)</p>  </figure><div><a name="page-1"></a></div>
+<p>Barely two weeks after AT&amp;T launched DirecTV Now, the online streaming service's customers have already been hit by multiple outages, unexpected blackouts of live local sports games, and missing channels.</p>
+<p>There was an outage of about three hours last night and a two-hour outage Friday night, TVPredictions <a href="http://tvpredictions.com/directv121416.htm">reported today</a>. "DirecTV Now's customers said they couldn't log onto the streaming service, or they were suddenly met with a blank screen if already watching," the report said.</p>
+<p>Ars Technica Senior Editor David Kravets was affected by yesterday's outage, being met by this error message when he tried to watch DirecTV Now:</p>
+</div><p><a href="http://arstechnica.com/information-technology/2016/12/atts-directv-now-plagued-with-outages-and-sports-blackouts/#p3">Read 15 remaining paragraphs</a> | <a href="http://arstechnica.com/information-technology/2016/12/atts-directv-now-plagued-with-outages-and-sports-blackouts/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Amazon begins Prime Air drone delivery trial in the UK</title>
+      <link>http://arstechnica.com/business/2016/12/amazon-prime-air-trial/</link>
+      <pubDate>Wed, 14 Dec 2016 16:05:28 +0000</pubDate>
+      <dc:creator><![CDATA[Sebastian Anthony]]></dc:creator>
+      <category><![CDATA[Gear & Gadgets]]></category>
+      <category><![CDATA[Ministry of Innovation]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[Amazon]]></category>
+      <category><![CDATA[CAA]]></category>
+      <category><![CDATA[cambridge]]></category>
+      <category><![CDATA[FAA]]></category>
+      <category><![CDATA[prime air]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1010051</guid>
+      <description><![CDATA[First customer received drone-delivered Prime Air order in just 13 minutes.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+
+
+
+
+
+<div><a name="page-1"></a></div>
+            <img src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2016/12/prime-air-drone-dec-2016-980x653.jpg"><p>
+                      </p>
+      
+
+<p>Amazon has begun a commercial trial of its Prime Air autonomous drone delivery service, beginning with a single fulfilment centre in Cambridge, England. The first delivery, which took place on December 7, took just <em>13 minutes</em> from the customer placing an order. There's a promotional video of the first Prime Air delivery embedded below.</p>
+<p>To begin with, just two Amazon customers have been invited into the Prime Air trial, and they both live near the fulfilment centre. The customers can request drone delivery seven days a week, but only during daylight hours, and the weather has to be within certain limits. The first Prime Air delivery, in case you were wondering, was an Amazon Fire TV stick and a bag of popcorn.</p>
+</div><p><a href="http://arstechnica.com/business/2016/12/amazon-prime-air-trial/#p3">Read 6 remaining paragraphs</a> | <a href="http://arstechnica.com/business/2016/12/amazon-prime-air-trial/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Late Shift, the world’s first interactive cinema movie, reviewed</title>
+      <link>http://arstechnica.com/gaming/2016/12/late-shift-interactive-movie-review/</link>
+      <pubDate>Wed, 14 Dec 2016 15:40:45 +0000</pubDate>
+      <dc:creator><![CDATA[Sebastian Anthony]]></dc:creator>
+      <category><![CDATA[Opposable Thumbs]]></category>
+      <category><![CDATA[Technology Lab]]></category>
+      <category><![CDATA[The Multiverse]]></category>
+      <category><![CDATA[art]]></category>
+      <category><![CDATA[late shift]]></category>
+
+      <guid isPermaLink="false">https://arstechnica.com/?p=1010037</guid>
+      <description><![CDATA[Does the protagonist kiss the girl? Kill the old man? Steal the car? You decide.]]></description>
+      <content:encoded>
+        <![CDATA[<div id="rss-wrap">
+<figure class="intro-image intro-left"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/12/late-shift-crop-800x492.jpg"><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2016/12/late-shift-crop.jpg" class="enlarge-link" data-height="1095" data-width="1780">Enlarge</a> </p>  </figure><div><a name="page-1"></a></div>
+<p>Recently I had the dubious honour of watching <em>Late Shift</em>, which bills itself as "the world's first cinematic interactive movie." As the movie unfolds, the cinema audience decides—using a smartphone app—how the protagonist responds to various situations, affecting how the story plays out on the big screen. There are about 180 different decision points that produce both big and small storyline branches, with seven different endings in total. The movie is being released at Vue cinemas in the UK in March 2017.</p>
+<p>The actual running time of the movie is about 90 minutes, depending on the decisions you make, but the <em>total</em> amount of film, including all the endings and branches that you don't get to see, is about four hours. When I watched <em>Late Shift</em>, the audience's decisions led to an extremely quick and brutal ending; later, the UK distributor of the movie told me that, if we'd made another choice, the movie could've run for another 20 minutes.</p>
+<p></p>
+</div><p><a href="http://arstechnica.com/gaming/2016/12/late-shift-interactive-movie-review/#p3">Read 15 remaining paragraphs</a> | <a href="http://arstechnica.com/gaming/2016/12/late-shift-interactive-movie-review/?comments=1">Comments</a></p>]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>

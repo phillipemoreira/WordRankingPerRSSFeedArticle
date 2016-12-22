@@ -64,6 +64,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RSSFeeds\ARSTechnica.xml" />
     <Content Include="RSSFeeds\malformedFeed.xml" />
     <Content Include="RSSFeeds\simpleFeed.xml" />
   </ItemGroup>
