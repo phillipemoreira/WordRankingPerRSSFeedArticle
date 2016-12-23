@@ -32,7 +32,7 @@ namespace RSSTools
 
             foreach (var article in articles)
             {
-                var rawContent = KeepImportantChars(article.EncodedContent);
+                var rawContent = StripText(article.EncodedContent);
 
                 foreach (var item in wordExtractor.Extract(rawContent))
                 {
@@ -64,8 +64,8 @@ namespace RSSTools
 
                 foreach (var article in feed.Articles)
                 {
-                    var cnt = KeepImportantChars(article.EncodedContent.ToLower()).Split(' ')
-                                .Count(w => w == commonWord.ToLower());
+                    var cnt = StripText(article.EncodedContent.ToLower()).Split(' ')
+                                .Count(w => w.Contains(commonWord.ToLower()));
 
                     word.AddArticleAppearance(article.Title, cnt);
                 }
@@ -82,30 +82,27 @@ namespace RSSTools
             return new ExclusionListExtractor();
         }
 
-        private string KeepImportantChars(string text)
+        private string StripText(string text)
         {
-            var withoutMarkup = RemoveMarkup(text);
+            var paragraphs = Regex.Matches(RemoveLinks(text), "<p>.*</p>");
 
-            var withoutPunctuation = RemovePunctuation(withoutMarkup);
+            var output = string.Empty;
+            foreach (var paragraph in paragraphs)
+            {
+                output += RemoveMarkup(paragraph.ToString());
+            }
 
-            var result = StripNumbers(withoutPunctuation);
-
-            return result;
+            return output;
         }
 
-        private string StripNumbers(string text)
+        private string RemoveLinks(string text)
         {
-            return Regex.Replace(text, @"[\d-]", string.Empty);
-        }
-
-        private string RemovePunctuation(string text)
-        {
-            return new string(text.Where(c => !char.IsPunctuation(c)).ToArray());
+            return Regex.Replace(text, "<a.*?</a>", String.Empty);
         }
 
         private string RemoveMarkup(string text)
         {
-           return Regex.Replace(text, "<.*?>", String.Empty);
+           return Regex.Replace(text, "<.*?>", String.Empty) + ' ';
         }
     }
 }

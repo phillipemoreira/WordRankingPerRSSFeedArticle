@@ -26,13 +26,17 @@ namespace WordRankingPerRSSFeedArticle
         private void FeedClient_Load(object sender, EventArgs e)
         {
             txtFeedURI.Text = "http://feeds.arstechnica.com/arstechnica/technology-lab";
-            txtFeedURI.Text = @"C:\Users\phillipe\Documents\GitHub\WordRankingPerRSSFeedArticle\RSSToolsTests\RSSFeeds\simpleFeed.xml";
+            //txtFeedURI.Text = @"C:\Users\phillipe\Documents\GitHub\WordRankingPerRSSFeedArticle\RSSToolsTests\RSSFeeds\simpleFeed.xml";
         }
 
         private void btnRead_Click(object sender, EventArgs e)
         {
             try
             {
+                lvFeeds.Clear();
+                lvWordArticle.Clear();
+                lvRelevantWords.Clear();
+
                 var feedURI = txtFeedURI.Text;
                 reader = RSSReader.Read(txtFeedURI.Text);
                 feed = reader.Feed;

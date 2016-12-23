@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace RSSTools
 {
@@ -45,7 +46,16 @@ namespace RSSTools
                     // Conjunctions
                     "for", "and", "nor", "but", "or", "yet", "so ", "after", "although", "because", "before", "even", "if",
                     "once", "since", "than", "that", "though", "till", "unless", "until", "when", "whenever", "where",
-                    "whereever", "while", 
+                    "whereever", "while",
+
+                    // Relative clauses
+                    "who", "which", "whose", "whom", "that", 
+
+                    // tobe verbs
+                    "is" , "are", "am", "were", "was", "will", "be",
+
+                    // Other common verbs
+                    "have", "has", "had"
                 };
             }
         }
@@ -54,7 +64,7 @@ namespace RSSTools
         {
             List<string> result = new List<string>();
 
-            var words = text.Split(' ');
+            var words = KeepOnlyAlpha(text).Split(' ');
 
             foreach (var word in words)
             {
@@ -65,6 +75,11 @@ namespace RSSTools
             }
 
             return result;
+        }
+
+        private string KeepOnlyAlpha(string input)
+        {
+            return Regex.Replace(input, @"[^a-zA-Z\s]", string.Empty);
         }
     }
 }
