@@ -33,15 +33,17 @@ namespace WordRankingPerRSSFeedArticle
         {
             try
             {
-                lvFeeds.Clear();
-                lvWordArticle.Clear();
-                lvRelevantWords.Clear();
+                lvArticles.Items.Clear();
+                lvWordArticle.Items.Clear();
+                lvRelevantWords.Items.Clear();
 
                 var feedURI = txtFeedURI.Text;
                 reader = RSSReader.Read(txtFeedURI.Text);
                 feed = reader.Feed;
 
                 this.FillControls();
+
+                btnIdendify.Enabled = true;
 
             }
             catch (Exception ex)
@@ -50,9 +52,37 @@ namespace WordRankingPerRSSFeedArticle
             }
         }
 
-        private void lvFeeds_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnIdendify_Click(object sender, EventArgs e)
+        {
+            if (reader == null)
+            {
+                MessageBox.Show("First you need to load a feed.");
+            }
+            else
+            {
+                try
+                {
+                    var numberOfRelevantTherms = Convert.ToInt32(txtNumberOfWords.Text);
+
+                    mostRelevantWords = reader.GetMostRelevantWords(numberOfRelevantTherms);
+
+                    this.FillRelevantWords(mostRelevantWords);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(string.Format("An error occured: {0}", ex.Message));
+                }
+            }
+        }
+
+        private void lvArticles_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListView view = (ListView)sender;
+
+            for (int i = 0; i < view.Items.Count; i++)
+            {
+                view.Items[i].BackColor = System.Drawing.Color.White;
+            }
 
             if (view.SelectedItems.Count == 1)
             {
@@ -64,7 +94,7 @@ namespace WordRankingPerRSSFeedArticle
         {
             ListView view = (ListView)sender;
 
-            lvWordArticle.Clear();
+            lvWordArticle.Items.Clear();
 
             if (view.SelectedItems.Count == 1)
             {
@@ -72,9 +102,35 @@ namespace WordRankingPerRSSFeedArticle
 
                 foreach (var item in word.AppearanceCountPerArticle)
                 {
-                    var row = new ListViewItem(item.NumberOfTimesInArticle.ToString(), item.ArticleTitle);
+                    var row = new ListViewItem(item.NumberOfTimesInArticle.ToString());
+                    row.SubItems.Add(item.ArticleTitle);
                     lvWordArticle.Items.Add(row);
                 }
+            }
+        }
+
+        private void lvWordArticle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListView view = (ListView)sender;
+
+            for (int i = 0; i < view.Items.Count; i++)
+            {
+                view.Items[i].BackColor = System.Drawing.Color.White;
+            }
+
+            for (int i = 0; i < lvArticles.Items.Count; i++)
+            {
+                lvArticles.Items[i].BackColor = System.Drawing.Color.White;
+            }
+
+            if (view.SelectedItems.Count == 1)
+            {
+                view.Items[view.SelectedIndices[0]].BackColor = System.Drawing.Color.Pink;
+
+                var index = view.SelectedIndices[0];
+                lvArticles.Items[index].BackColor = System.Drawing.Color.Pink;
+
+                browser.DocumentText = feed.Articles.Single(i => i.Title == lvArticles.Items[index].Text).EncodedContent;
             }
         }
 
@@ -85,7 +141,6 @@ namespace WordRankingPerRSSFeedArticle
         private void FillControls()
         {
             this.FillFeedListView();
-            this.FillRelevantWords();
         }
 
         private void FillFeedListView()
@@ -93,21 +148,24 @@ namespace WordRankingPerRSSFeedArticle
             var articles = feed.Articles;
             foreach (var article in articles)
             {
-                var row = new ListViewItem(article.Title, article.Date.ToShortDateString());
-                lvFeeds.Items.Add(row);
+                var row = new ListViewItem(article.Title);
+                row.SubItems.Add(article.Date.ToShortDateString());
+                lvArticles.Items.Add(row);
             }
         }
 
-        private void FillRelevantWords()
+        private void FillRelevantWords(List<Word> words)
         {
-            mostRelevantWords = reader.GetMostRelevantWords(5);
-            foreach (var word in mostRelevantWords)
+            foreach (var word in words)
             {
                 var row = new ListViewItem(word.Text);
+                row.SubItems.Add(word.AppearanceCount.ToString());
                 lvRelevantWords.Items.Add(row);
             }
         }
 
-        #endregion  
+        #endregion
+
+
     }
 }
