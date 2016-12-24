@@ -3,6 +3,7 @@ using System;
 using RSSTools.Exceptions;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Net;
 
 namespace RSSTools.Tests
 {
@@ -101,10 +102,10 @@ namespace RSSTools.Tests
             Assert.IsTrue(articles.Count == 3);
 
             this.AssertArticle(articles[0], "Fisrt Article", "Description of first article.", "http://test.com/firstArticle",
-                new DateTime(2016, 12, 02, 20, 55, 38), "22 Thor Jim, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22 ");
+                new DateTime(2016, 12, 02, 20, 55, 38), "22 AT&T Thor Jim, AT&T, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22 ");
 
             this.AssertArticle(articles[1], "Second Article", "Description of second article.", "http://test.com/secondArticle",
-                new DateTime(2016, 12, 03, 21, 55, 38), "22 Out of nowhere, some Storm started and we all looked at Thor because we thought he did it. "
+                new DateTime(2016, 12, 03, 21, 55, 38), "22 AT&T Out of nowhere, AT&T, some Storm started and we all looked at Thor because we thought he did it. "
                 + "But it turns out, it was actually Erik. Erik did it in order for us to open a portal to the land of Yoshi. Where we could eat some "
                 + "apples and play in some other beach. ");
 
@@ -136,7 +137,7 @@ namespace RSSTools.Tests
             var output = string.Empty;
             foreach (var paragraph in paragraphs)
             {
-                output += Regex.Replace(paragraph.ToString(), @"<.*?>", String.Empty) + " ";
+                output += WebUtility.HtmlDecode(Regex.Replace(paragraph.ToString(), @"<.*?>", String.Empty)) + " ";
             }
 
             return output;

@@ -65,16 +65,16 @@ namespace RSSTools.Tests
             Assert.AreEqual("Erik", mostRelevantWords[0].Text);
             Assert.AreEqual(5, mostRelevantWords[0].AppearanceCount);
 
-            Assert.AreEqual("Thor", mostRelevantWords[1].Text);
+            Assert.AreEqual("AT&T", mostRelevantWords[1].Text);
             Assert.AreEqual(4, mostRelevantWords[1].AppearanceCount);
 
-            Assert.AreEqual("Yoshi", mostRelevantWords[2].Text);
+            Assert.AreEqual("Thor", mostRelevantWords[2].Text);
             Assert.AreEqual(4, mostRelevantWords[2].AppearanceCount);
 
-            Assert.AreEqual("Jim", mostRelevantWords[3].Text);
-            Assert.AreEqual(3, mostRelevantWords[3].AppearanceCount);
+            Assert.AreEqual("Yoshi", mostRelevantWords[3].Text);
+            Assert.AreEqual(4, mostRelevantWords[3].AppearanceCount);
 
-            Assert.AreEqual("beach", mostRelevantWords[4].Text);
+            Assert.AreEqual("Jim", mostRelevantWords[4].Text);
             Assert.AreEqual(3, mostRelevantWords[4].AppearanceCount);
         }
 
@@ -140,6 +140,16 @@ namespace RSSTools.Tests
                             new AppearanceCountWordArticle { ArticleTitle = "Third Article", NumberOfTimesInArticle = 1 }
                         }
                     },
+                    // Word: "AT&T"
+                    new WordTest()
+                    {
+                        AppearanceCountPerArticle = new List<AppearanceCountWordArticle>()
+                        {
+                            new AppearanceCountWordArticle { ArticleTitle = "Fisrt Article", NumberOfTimesInArticle = 2 },
+                            new AppearanceCountWordArticle { ArticleTitle = "Second Article", NumberOfTimesInArticle = 2 },
+                            new AppearanceCountWordArticle { ArticleTitle = "Third Article", NumberOfTimesInArticle = 0 }
+                        }
+                    },
                     // Word: "Thor"
                     new WordTest()
                     {
@@ -168,16 +178,6 @@ namespace RSSTools.Tests
                             new AppearanceCountWordArticle { ArticleTitle = "Fisrt Article", NumberOfTimesInArticle = 1 },
                             new AppearanceCountWordArticle { ArticleTitle = "Second Article", NumberOfTimesInArticle = 0 },
                             new AppearanceCountWordArticle { ArticleTitle = "Third Article", NumberOfTimesInArticle = 2 }
-                        }
-                    },
-                    // Word: "beach"
-                    new WordTest()
-                    {
-                        AppearanceCountPerArticle = new List<AppearanceCountWordArticle>()
-                        {
-                            new AppearanceCountWordArticle { ArticleTitle = "Fisrt Article", NumberOfTimesInArticle = 1 },
-                            new AppearanceCountWordArticle { ArticleTitle = "Second Article", NumberOfTimesInArticle = 1 },
-                            new AppearanceCountWordArticle { ArticleTitle = "Third Article", NumberOfTimesInArticle = 1 }
                         }
                     }
                 });

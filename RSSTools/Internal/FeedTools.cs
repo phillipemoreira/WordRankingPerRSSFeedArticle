@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Net;
 
 namespace RSSTools
 {
@@ -85,7 +84,9 @@ namespace RSSTools
 
         private string StripText(string text, bool keepOnlyAlphaChars = false)
         {
-            RegexHelper regexHelper = new RegexHelper(text);
+            var decodedText = WebUtility.HtmlDecode(text);
+
+            RegexHelper regexHelper = new RegexHelper(decodedText);
 
             regexHelper.RemoveLinks()
                 .KeepOnlyHTMLParagraphs()
