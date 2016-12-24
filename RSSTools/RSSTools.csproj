@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Internal\FeedTools.cs" />
+    <Compile Include="Internal\RegexHelper.cs" />
     <Compile Include="Internal\RelevantWordHandling\ExclusionListExtractor.cs" />
     <Compile Include="Internal\RelevantWordHandling\IRelevantWordExtractor.cs" />
     <Compile Include="Internal\RelevantWordHandling\POSTagger.cs" />

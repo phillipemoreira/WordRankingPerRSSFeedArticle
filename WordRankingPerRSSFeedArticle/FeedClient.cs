@@ -156,6 +156,8 @@ namespace WordRankingPerRSSFeedArticle
 
         private void FillRelevantWords(List<Word> words)
         {
+            lvRelevantWords.Items.Clear();
+
             foreach (var word in words)
             {
                 var row = new ListViewItem(word.Text);

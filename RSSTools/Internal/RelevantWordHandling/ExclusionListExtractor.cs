@@ -36,7 +36,7 @@ namespace RSSTools
                     "they", "them", "their", "theirs", "themselves",
 
                     // Prepositions
-                    "aboard", "about", "above", "across", "after", "against", "along", "amid", "among", "anti", "around",
+                    "on", "at", "in", "out" ,"aboard", "about", "above", "across", "after", "against", "along", "amid", "among", "anti", "around",
                     "as", "at", "before", "behind", "below", "beneath", "beside", "besides", "between", "beyond", "but", "by",
                     "concerning", "considering", "despite", "down", "during", "except", "excepting", "excluding", "following",
                     "for", "from", "in", "inside", "into", "like", "minus", "near", "of", "off", "on", "onto", "opposite", "outside",
@@ -51,11 +51,23 @@ namespace RSSTools
                     // Relative clauses
                     "who", "which", "whose", "whom", "that", 
 
-                    // tobe verbs
-                    "is" , "are", "am", "were", "was", "will", "be",
+                    // to be verbs
+                    "is" , "are", "am", "were", "was", "will", "be", "been", "being", "do",
 
                     // Other common verbs
-                    "have", "has", "had"
+                    "have", "has", "had", "can", "could", "make", "should", "want",
+
+                    // Time
+                    "today", "tomorrow", "yesterday",
+
+                    // Other
+                    "use", "used", "using", "uses", "all", "now", "then", "most", "more", "less", "these", "this", "those",
+                    "not", "yes", "also", "so", "how", "based", "multiple", "doesnt", "doesn", "only", "many",
+                    "must", "ago", "whether", "least", "available", "enabled", "require", "allow", "hadnt", "need", "just",
+                    "already", "easy", "hard",
+
+                    // Numberals
+                    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"
                 };
             }
         }
@@ -64,7 +76,7 @@ namespace RSSTools
         {
             List<string> result = new List<string>();
 
-            var words = KeepOnlyAlpha(text).Split(' ');
+            var words = new RegexHelper(text).KeepOnlyAlpha().Text.Split(' ');
 
             foreach (var word in words)
             {
@@ -75,11 +87,6 @@ namespace RSSTools
             }
 
             return result;
-        }
-
-        private string KeepOnlyAlpha(string input)
-        {
-            return Regex.Replace(input, @"[^a-zA-Z\s]", string.Empty);
         }
     }
 }

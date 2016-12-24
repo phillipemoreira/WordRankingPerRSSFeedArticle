@@ -64,8 +64,9 @@ namespace RSSTools
 
                 foreach (var article in feed.Articles)
                 {
-                    var cnt = StripText(article.EncodedContent.ToLower()).Split(' ')
-                                .Count(w => w.Contains(commonWord.ToLower()));
+                    var articleWordsOnly = StripText(article.EncodedContent.ToLower(), true);
+
+                    var cnt = articleWordsOnly.Split(' ').Count(w => w == commonWord.ToLower());
 
                     word.AddArticleAppearance(article.Title, cnt);
                 }
@@ -82,27 +83,20 @@ namespace RSSTools
             return new ExclusionListExtractor();
         }
 
-        private string StripText(string text)
+        private string StripText(string text, bool keepOnlyAlphaChars = false)
         {
-            var paragraphs = Regex.Matches(RemoveLinks(text), "<p>.*</p>");
+            RegexHelper regexHelper = new RegexHelper(text);
 
-            var output = string.Empty;
-            foreach (var paragraph in paragraphs)
+            regexHelper.RemoveLinks()
+                .KeepOnlyHTMLParagraphs()
+                .RemoveMarkup();
+
+            if (keepOnlyAlphaChars)
             {
-                output += RemoveMarkup(paragraph.ToString());
+                regexHelper.KeepOnlyAlpha();
             }
 
-            return output;
-        }
-
-        private string RemoveLinks(string text)
-        {
-            return Regex.Replace(text, "<a.*?</a>", String.Empty);
-        }
-
-        private string RemoveMarkup(string text)
-        {
-           return Regex.Replace(text, "<.*?>", String.Empty) + ' ';
+            return regexHelper.Text;
         }
     }
 }
