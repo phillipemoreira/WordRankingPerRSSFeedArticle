@@ -52,10 +52,10 @@ namespace RSSTools
                     "who", "which", "whose", "whom", "that", 
 
                     // to be verbs
-                    "is" , "are", "am", "were", "was", "will", "be", "been", "being", "do",
+                    "is" , "are", "am", "were", "was", "will", "be", "been", "being", "do", "did", "done",
 
                     // Other common verbs
-                    "have", "has", "had", "can", "could", "make", "should", "want",
+                    "have", "has", "had", "can", "could", "make", "should", "want", "wanted",
 
                     // Time
                     "today", "tomorrow", "yesterday",
@@ -64,7 +64,7 @@ namespace RSSTools
                     "use", "used", "using", "uses", "all", "now", "then", "most", "more", "less", "these", "this", "those",
                     "not", "yes", "also", "so", "how", "based", "multiple", "doesnt", "doesn", "only", "many",
                     "must", "ago", "whether", "least", "available", "enabled", "require", "allow", "hadnt", "need", "just",
-                    "already", "easy", "hard",
+                    "already", "easy", "hard", "let", "actually", "got", "back", "realized", "put", "think",
 
                     // Numberals
                     "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"
