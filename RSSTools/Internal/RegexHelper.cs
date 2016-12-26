@@ -27,7 +27,7 @@ namespace RSSTools
                 paragraphs += item.ToString() + ' ';
             }
 
-            text = paragraphs;
+            text = paragraphs.Substring(0, paragraphs.Length - 1);
 
             Regex.Replace(text, @"\s\s*", " ");
 

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
 namespace RSSTools
 {
@@ -56,6 +55,7 @@ namespace RSSTools
 
                     // Other common verbs
                     "have", "has", "had", "can", "could", "make", "should", "want", "wanted",
+                    "say", "said",
 
                     // Time
                     "today", "tomorrow", "yesterday",

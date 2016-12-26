@@ -43,7 +43,6 @@ namespace RSSTools
 
         private static Article ParseArticle(XElement ArticleItem)
         {
-            // TODO: find a way to infer the namespace automatically
             XNamespace ContentNS = "http://purl.org/rss/1.0/modules/content/";
 
             var title = ArticleItem.Element("title");

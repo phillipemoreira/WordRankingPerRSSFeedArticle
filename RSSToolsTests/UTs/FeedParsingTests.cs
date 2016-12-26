@@ -127,20 +127,7 @@ namespace RSSTools.Tests
             Assert.AreEqual(description, article.Description);
             Assert.AreEqual(link, article.Link);
             Assert.AreEqual(postDate, article.Date);
-            Assert.AreEqual(encodedContent, StripText(article.EncodedContent));
-        }
-
-        private string StripText(string text)
-        {
-            var paragraphs = Regex.Matches(text, "<p>.*</p>");
-
-            var output = string.Empty;
-            foreach (var paragraph in paragraphs)
-            {
-                output += WebUtility.HtmlDecode(Regex.Replace(paragraph.ToString(), @"<.*?>", String.Empty)) + " ";
-            }
-
-            return output;
+            Assert.AreEqual(encodedContent, article.PureTextContent);
         }
     }
 }

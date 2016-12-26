@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Net;
 
 namespace RSSTools
 {
@@ -29,9 +29,14 @@ namespace RSSTools
         public string Link { get; }
 
         /// <summary>
-        /// The content of the article.
+        /// The HTML formatted content of the article.
         /// </summary>
         public string EncodedContent { get; }
+
+        /// <summary>
+        /// The text only representation of the content of the article.
+        /// </summary>
+        public string PureTextContent { get; }
 
         internal Article(
             string date,
@@ -45,6 +50,20 @@ namespace RSSTools
             this.Description = description;
             this.Link = link;
             this.EncodedContent = encodedContent;
+            this.PureTextContent = StripText(encodedContent);
+        }
+
+        private string StripText(string text)
+        {
+            var decodedText = WebUtility.HtmlDecode(text);
+
+            RegexHelper regexHelper = new RegexHelper(decodedText);
+
+            regexHelper.RemoveLinks()
+                .KeepOnlyHTMLParagraphs()
+                .RemoveMarkup();
+
+            return regexHelper.Text;
         }
     }
 }

@@ -31,9 +31,7 @@ namespace RSSTools
 
             foreach (var article in articles)
             {
-                var rawContent = StripText(article.EncodedContent);
-
-                foreach (var item in wordExtractor.Extract(rawContent))
+                foreach (var item in wordExtractor.Extract(article.PureTextContent))
                 {
                     feedWords.Add(item);
                 }
@@ -63,9 +61,11 @@ namespace RSSTools
 
                 foreach (var article in feed.Articles)
                 {
-                    var articleWordsOnly = StripText(article.EncodedContent.ToLower(), true);
+                    var regexhelper = new RegexHelper(article.PureTextContent.ToLower());
 
-                    var cnt = articleWordsOnly.Split(' ').Count(w => w == commonWord.ToLower());
+                    var articleAplhaOnly = regexhelper.KeepOnlyAlpha().Text;
+
+                    var cnt = articleAplhaOnly.Split(' ').Count(w => w == commonWord.ToLower());
 
                     word.AddArticleAppearance(article.Title, cnt);
                 }
@@ -80,24 +80,6 @@ namespace RSSTools
         {
             //return new POSTagger();
             return new ExclusionListExtractor();
-        }
-
-        private string StripText(string text, bool keepOnlyAlphaChars = false)
-        {
-            var decodedText = WebUtility.HtmlDecode(text);
-
-            RegexHelper regexHelper = new RegexHelper(decodedText);
-
-            regexHelper.RemoveLinks()
-                .KeepOnlyHTMLParagraphs()
-                .RemoveMarkup();
-
-            if (keepOnlyAlphaChars)
-            {
-                regexHelper.KeepOnlyAlpha();
-            }
-
-            return regexHelper.Text;
         }
     }
 }
