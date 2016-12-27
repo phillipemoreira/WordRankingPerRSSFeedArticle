@@ -50,8 +50,10 @@ namespace RSSTools
 
         internal RegexHelper KeepOnlyAlpha()
         {
-            text = Regex.Replace(text, @"[^a-zA-Z&\s]", string.Empty);
+            text = Regex.Replace(text, "'s", string.Empty);
 
+            text = Regex.Replace(text, @"[^a-zA-Z&\s]", string.Empty);
+           
             return this;
         }
     }

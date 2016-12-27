@@ -16,7 +16,7 @@ namespace RSSTools
         internal List<Word> IdentifyMostRelevantWords(int _numberOfWords)
         {
             // Putting all nouns from every article in a single place
-            var feedWords = GetFeedRelevantWords(feed.Articles, GetWordExtractor());
+            var feedWords = GetFeedRelevantWords(GetWordExtractor());
 
             // Finding TOP appearing nouns.
             var mostCommonWords = GetTopAppearingWords(feedWords, _numberOfWords);
@@ -25,15 +25,15 @@ namespace RSSTools
             return CreateWords(mostCommonWords);
         }
 
-        private List<string> GetFeedRelevantWords(List<Article> articles, IRelevantWordExtractor wordExtractor)
+        private List<string> GetFeedRelevantWords(IRelevantWordExtractor wordExtractor)
         {
             List<string> feedWords = new List<string>();
 
-            foreach (var article in articles)
+            foreach (var article in feed.Articles)
             {
-                foreach (var item in wordExtractor.Extract(article.PureTextContent))
+                foreach (var word in wordExtractor.Extract(article.PureTextContent))
                 {
-                    feedWords.Add(item);
+                    feedWords.Add(word);
                 }
             }
 

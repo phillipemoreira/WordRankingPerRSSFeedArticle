@@ -102,7 +102,7 @@ namespace RSSTools.Tests
             Assert.IsTrue(articles.Count == 3);
 
             this.AssertArticle(articles[0], "Fisrt Article", "Description of first article.", "http://test.com/firstArticle",
-                new DateTime(2016, 12, 02, 20, 55, 38), "22 AT&T Thor Jim, AT&T, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22 ");
+                new DateTime(2016, 12, 02, 20, 55, 38), "22 AT&T Thor's Jim, AT&T, Erik, Yoshi with me in the beach. They were at my place, but Erik wanted to go out with Thor, so I let them. 22 ");
 
             this.AssertArticle(articles[1], "Second Article", "Description of second article.", "http://test.com/secondArticle",
                 new DateTime(2016, 12, 03, 21, 55, 38), "22 AT&T Out of nowhere, AT&T, some Storm started and we all looked at Thor because we thought he did it. "
